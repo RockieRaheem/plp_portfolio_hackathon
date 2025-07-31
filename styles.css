@@ -624,55 +624,6 @@ header#home {
   color: #fff;
 }
 
-.contact-socials {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-top: 1rem;
-}
-
-.social-icon {
-  font-size: 1.7rem;
-  color: #2ecc40;
-  background: #101820;
-  border-radius: 50%;
-  padding: 0.4rem;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  position: relative;
-  text-decoration: none;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  background: #2ecc40;
-  color: #101820;
-  transform: scale(1.15);
-}
-
-.social-icon::after {
-  content: attr(title);
-  position: absolute;
-  bottom: -2.2rem;
-  left: 50%;
-  transform: translateX(-50%) scale(0.95);
-  background: #2ecc40;
-  color: #101820;
-  padding: 0.2rem 0.7rem;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: opacity 0.18s, transform 0.18s;
-  z-index: 2;
-}
-
-.social-icon:hover::after,
-.social-icon:focus::after {
-  opacity: 1;
-  transform: translateX(-50%) scale(1.05);
-}
-
 /* ====== Footer ====== */
 .footer {
   background: linear-gradient(90deg, #101820 60%, #2ecc40 100%);
