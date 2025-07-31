@@ -63,6 +63,34 @@ body {
   text-shadow: 0 2px 8px #000, 0 0 2px #2ecc40;
   font-family: inherit;
   margin-left: 0.2rem;
+  transition: color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-name:hover,
+.navbar-name:focus {
+  color: #fff;
+  text-shadow: 0 0 16px #2ecc40, 0 0 8px #00b894;
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.navbar-name::after {
+  content: "";
+  display: block;
+  margin: 0.18rem auto 0 auto;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #2ecc40, #00b894);
+  border-radius: 1px;
+  transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-name:hover::after,
+.navbar-name:focus::after {
+  width: 80%;
 }
 
 .nav-list {
