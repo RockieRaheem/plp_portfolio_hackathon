@@ -273,6 +273,108 @@ header {
   }
 }
 
+/* Education Timeline */
+.education-section {
+  background: linear-gradient(120deg, #0a192f 80%, #1a2a3a 100%);
+  padding: 4rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(10, 25, 47, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+  padding: 2.2rem 2.5rem;
+}
+.education-container h2 {
+  color: #7fffa6;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid #7fffa6;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 18px;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-year {
+  position: absolute;
+  left: -70px;
+  top: 0;
+  color: #b2ffd6;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: #1a2a3a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 #7fffa633;
+  letter-spacing: 1px;
+}
+.timeline-content {
+  background: rgba(127, 255, 166, 0.08);
+  border-left: 3px solid #7fffa6;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  color: #e0ffe0;
+  box-shadow: 0 2px 12px 0 rgba(127, 255, 166, 0.07);
+}
+.timeline-content strong {
+  color: #7fffa6;
+  font-size: 1.08rem;
+}
+.timeline-content p {
+  margin: 0.3rem 0 0 0;
+  font-size: 1rem;
+  color: #e0ffe0;
+}
+
+@media (max-width: 700px) {
+  .education-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .timeline {
+    padding-left: 10px;
+  }
+  .timeline-year {
+    left: -60px;
+    font-size: 0.98rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .timeline-content {
+    padding: 0.7rem 0.7rem;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 500px) {
+  .timeline-year {
+    position: static;
+    display: block;
+    margin-bottom: 0.3rem;
+    left: 0;
+    text-align: left;
+  }
+  .timeline {
+    border-left: 2px solid #7fffa6;
+    padding-left: 5px;
+  }
+  .timeline-item {
+    padding-left: 0;
+  }
+}
+
 /* Responsive design adjustments */
 @media (max-width: 600px) {
   .intro-text {
