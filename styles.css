@@ -1,0 +1,177 @@
+/* Raheem Eco-Space Portfolio Homepage Styles *
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0a192f 0%, #1a2a3a 100%);
+  color: #e0ffe0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stars-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 8px 2px #fff;
+}
+#star1 {
+  width: 3px;
+  height: 3px;
+  top: 20%;
+  left: 15%;
+  animation: twinkle 2s infinite;
+}
+#star2 {
+  width: 2px;
+  height: 2px;
+  top: 40%;
+  left: 70%;
+  animation: twinkle 1.5s infinite 0.5s;
+}
+#star3 {
+  width: 4px;
+  height: 4px;
+  top: 60%;
+  left: 30%;
+  animation: twinkle 2.5s infinite 1s;
+}
+#star4 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 75%;
+  left: 80%;
+  animation: twinkle 1.8s infinite 0.8s;
+}
+#star5 {
+  width: 3.5px;
+  height: 3.5px;
+  top: 10%;
+  left: 55%;
+  animation: twinkle 2.2s infinite 0.3s;
+}
+#star6 {
+  width: 2px;
+  height: 2px;
+  top: 30%;
+  left: 25%;
+  animation: twinkle 1.7s infinite 0.2s;
+}
+#star7 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 50%;
+  left: 60%;
+  animation: twinkle 2.1s infinite 0.7s;
+}
+#star8 {
+  width: 3px;
+  height: 3px;
+  top: 80%;
+  left: 40%;
+  animation: twinkle 1.6s infinite 0.4s;
+}
+#star9 {
+  width: 2px;
+  height: 2px;
+  top: 65%;
+  left: 10%;
+  animation: twinkle 2.3s infinite 0.6s;
+}
+#star10 {
+  width: 3.5px;
+  height: 3.5px;
+  top: 15%;
+  left: 85%;
+  animation: twinkle 1.9s infinite 0.9s;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.intro-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #e0ffe0;
+  background: rgba(10, 25, 47, 0.7);
+  padding: 2rem 3rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  animation: fadeInUp 1.2s ease;
+}
+.intro-text h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: #7fffa6;
+  text-shadow: 0 0 8px #1a2a3a;
+}
+.intro-text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #b2ffd6;
+}
+.intro-text p {
+  font-size: 1.1rem;
+  color: #e0ffe0;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .intro-text {
+    padding: 1.2rem 0.5rem;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .intro-text h2 {
+    font-size: 1.1rem;
+  }
+}
