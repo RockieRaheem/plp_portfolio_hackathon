@@ -1,3 +1,18 @@
+@media (min-width: 1090px) {
+  .projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem 2.2rem;
+  }
+  .project-card {
+    width: 30%;
+    max-width: none;
+    min-width: 320px;
+    flex: 0 0 30%;
+    margin: 0;
+  }
+}
 @media (max-width: 700px) {
   .about-content,
   .contact-container,
@@ -47,98 +62,101 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2.5vw;
-  min-height: 68px;
 }
-
-.navbar-logo {
+  
+/* =====================
+   Skills Section Styles
+   (Planetary Display)
+====================== */
+.skills-section {
+  padding: 60px 0 40px 0;
+  background: transparent;
+  text-align: center;
+}
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.planets-row {
   display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
 }
-
-.navbar-profile-img,
-.about-img {
-  width: 44px; /* .about-img can be larger if you want */
-  height: 44px;
+.planet {
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #2ecc40;
-  box-shadow: 0 0 0 0 #2ecc40, 0 2px 8px #2ecc4040;
-  background: #fff;
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-    filter 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  z-index: 1;
-}
-
-/* Larger about image */
-.about-img {
-  width: 150px;
-  height: 150px;
-  border-width: 4px;
-}
-
-/* Glowing effect on hover/focus */
-.navbar-profile-img:hover,
-.navbar-profile-img:focus,
-.about-img:hover,
-.about-img:focus {
-  box-shadow: 0 0 0 6px #2ecc4040, 0 0 24px 6px #2ecc40cc, 0 2px 16px #2ecc4040;
-  border-color: #00e676;
-  filter: brightness(1.08) saturate(1.2);
-  outline: none;
-}
-
-.navbar-name {
-  font-size: 1.32rem;
-  font-weight: bold;
-  color: #2ecc40;
-  letter-spacing: 1.2px;
-  text-shadow: 0 2px 8px #000, 0 0 2px #2ecc40;
-  font-family: inherit;
-  margin-left: 0.2rem;
-  transition: color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-    text-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  position: relative;
-}
-
-.navbar-name:hover,
-.navbar-name:focus {
-  color: #fff;
-  text-shadow: 0 0 16px #2ecc40, 0 0 8px #00b894;
-  transform: scale(1.08);
-}
-
-.navbar-name::after {
-  content: "";
-  display: block;
-  margin: 0.18rem auto 0 auto;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #2ecc40, #00b894);
-  border-radius: 1px;
-  transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navbar-name:hover::after,
-.navbar-name:focus::after {
-  width: 80%;
-}
-
-.nav-list {
+  background: linear-gradient(135deg, #1e293b 60%, #22c55e 100%);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 2.2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.2), 0 1.5px 0 #22c55e;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.planet:hover {
+  transform: scale(1.13);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.4), 0 2.5px 0 #22c55e;
+}
+.planet-label {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 41, 59, 0.9);
+  color: #22c55e;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+.planet:hover .planet-label {
+  opacity: 1;
+}
+.planet-text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  z-index: 1;
+  pointer-events: none;
+}
+.python-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #3776ab 100%);
+}
+.js-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #f7df1e 100%);
+}
+.react-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #61dafb 100%);
+}
+.nextjs-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #fff 100%);
+  color: #222;
+}
+.express-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #222 100%);
+}
+.nodejs-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #3c873a 100%);
+}
+.mongodb-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #4db33d 100%);
+}
+.postgres-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #336791 100%);
+}
+.html-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #e34c26 100%);
+}
+.css-planet {
+  background: linear-gradient(135deg, #1e293b 60%, #264de4 100%);
+}
   height: 100%;
 }
 
@@ -244,103 +262,104 @@ body {
     min-width: 120px;
     max-width: 52vw;
     background: rgba(16, 24, 32, 0.98);
-    box-shadow: 0 4px 24px #2ecc4020;
-    border-radius: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
-    gap: 0.7rem;
-    transform: translateY(-40px) scale(0.95);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 150;
-  }
-  .nav-toggle:checked ~ .nav-list {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0) scale(1);
-  }
-  .nav-list li {
-    width: 100%;
-  }
-  .nav-list a {
-    width: 100%;
-    padding: 0.7rem 0.5rem;
-    font-size: 1.08rem;
-    border-radius: 8px;
-    text-align: left;
-  }
+/* =====================
+   Projects Section Styles
+   (Project Cards Display)
+====================== */
+.projects-section {
+  padding: 60px 0 40px 0;
+  background: transparent;
+  text-align: center;
 }
-
-/* Hide nav-list by default on small screens */
-@media (max-width: 900px) {
-  .nav-list {
-    display: flex;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .nav-toggle:checked ~ .nav-list {
-    visibility: visible;
-    pointer-events: auto;
-    display: flex;
-  }
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-/* Show nav-list as normal on large screens */
-@media (min-width: 901px) {
-  .navbar-hamburger,
-  .nav-toggle {
-    display: none !important;
-  }
-  .nav-list {
-    position: static;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    gap: 2.2rem;
-    transform: none !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-  }
-  .nav-list li {
-    width: auto;
-  }
-  .nav-list a {
-    width: auto;
-    padding: 0.7rem 0.9rem;
-    font-size: 1.07rem;
-    border-radius: 6px;
-    text-align: center;
-  }
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 2.5%;
+  margin-top: 32px;
 }
-
-.planet-label {
-  display: none;
-}
-
-.planet:hover,
-.planet:focus {
-  transform: scale(1.13);
-  box-shadow: 0 0 32px #2ecc40cc;
-}
-
-/* ====== Home Section ====== */
-header#home {
-  min-height: 100vh;
+.project-card {
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34, 197, 94, 0.13), 0 1.5px 0 #22c55e;
+  width: 100%;
+  max-width: 350px;
+  min-width: 270px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 28px 18px 22px 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
-  padding-top: 5rem;
   overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.23), 0 2.5px 0 #22c55e;
+}
+.project-image {
+  width: 100%;
+  max-width: 300px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.13);
+}
+.project-content h3 {
+  color: #22c55e;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.project-content p {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+.project-tech-stack {
+  margin-bottom: 14px;
+}
+.tech-badge {
+  display: inline-block;
+  background: #1e293b;
+  color: #22c55e;
+  border-radius: 8px;
+  padding: 3px 10px;
+  font-size: 0.93rem;
+  margin: 0 4px 4px 0;
+  box-shadow: 0 1px 3px rgba(34, 197, 94, 0.09);
+}
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  background: #22c55e;
+  padding: 7px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.project-link:hover {
+  background: #1e293b;
+  color: #22c55e;
+}
+@media (min-width: 1090px) {
+  .projects-row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2.5%;
+  }
+  .project-card {
+    width: 30%;
+    max-width: none;
+    min-width: 0;
+  }
+}
 }
 
 .stars-bg {
@@ -614,10 +633,11 @@ header#home {
 }
 
 .planet {
-  width: 340px;
-  max-width: 340px;
-  min-width: 0;
-  flex: 0 0 340px;
+  width: 420px;
+  max-width: 420px;
+  min-width: 320px;
+  flex: 1 1 30%;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,10 +798,18 @@ header#home {
 
 .project-image-placeholder {
   width: 100%;
-  height: 120px;
-  background: linear-gradient(135deg, #2ecc40 30%, #101820 100%);
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .project-content h3 {
