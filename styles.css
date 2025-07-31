@@ -1,3 +1,17 @@
+@media (max-width: 700px) {
+  .about-content,
+  .contact-container,
+  .education-container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-content,
+  .contact-container,
+  .education-container {
+    padding: 0 1.2rem;
+  }
+}
 /* ====== Global Styles & Resets ====== */
 *,
 *::before,
@@ -179,11 +193,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
   margin-left: 1rem;
-  z-index: 120;
+  margin-right: 0.7rem;
+  z-index: 200;
   transition: background 0.2s;
 }
 .navbar-hamburger span {
@@ -224,24 +239,24 @@ body {
   .nav-list {
     position: fixed;
     top: 0.8rem;
-    right: 1.2rem;
+    right: 0.7rem;
     height: auto;
-    min-width: 180px;
-    max-width: 80vw;
+    min-width: 120px;
+    max-width: 52vw;
     background: rgba(16, 24, 32, 0.98);
     box-shadow: 0 4px 24px #2ecc4020;
     border-radius: 16px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
     gap: 0.7rem;
     transform: translateY(-40px) scale(0.95);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.22s cubic-bezier(0.4, 0, 0.2, 1),
       transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 110;
+    z-index: 150;
   }
   .nav-toggle:checked ~ .nav-list {
     opacity: 1;
@@ -507,6 +522,8 @@ header#home {
 .education-container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
 }
 
 .education-container h2 {
@@ -518,8 +535,11 @@ header#home {
 .timeline {
   position: relative;
   margin: 0 auto;
-  padding-left: 2rem;
+  padding-left: 1rem;
   border-left: 3px solid #2ecc40;
+  margin-left: 0.5rem;
+  overflow-x: auto;
+  min-width: 0;
 }
 
 .timeline-item {
@@ -580,10 +600,10 @@ header#home {
 }
 
 .planet {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #222;
+  width: 32%;
+  max-width: 420px;
+  min-width: 280px;
+  flex: 1 1 32%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -593,6 +613,19 @@ header#home {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.planet {
+  width: 340px;
+  max-width: 340px;
+  min-width: 0;
+  flex: 0 0 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 16px #2ecc4040;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 .planet-label {
   position: absolute;
   bottom: -2.2rem;
@@ -705,6 +738,8 @@ header#home {
 .projects-container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
 }
 
 .projects-container h2 {
@@ -716,16 +751,20 @@ header#home {
 .projects-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem 2.2rem;
   justify-content: center;
 }
 
 .project-card {
   background: #1a2a2f;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px #2ecc4020;
-  padding: 2rem 1.5rem;
-  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #2ecc4020;
+  padding: 2.3rem 2rem 2.1rem 2rem;
+  width: 370px;
+  max-width: 420px;
+  min-width: 320px;
+  flex: 1 1 28%;
+  box-sizing: border-box;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
@@ -791,6 +830,8 @@ header#home {
 .certificates-container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
 }
 
 .certificates-container h2 {
@@ -811,8 +852,10 @@ header#home {
   border-radius: 12px;
   box-shadow: 0 2px 12px #2ecc4020;
   padding: 1.5rem 1.2rem;
-  width: 260px;
-  position: relative;
+  width: 31%;
+  max-width: 420px;
+  min-width: 300px;
+  flex: 1 1 31%;
   animation: floatDoc 3.5s ease-in-out infinite alternate;
 }
 
@@ -850,6 +893,8 @@ header#home {
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -863,6 +908,8 @@ header#home {
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 2rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .form-group {
@@ -1034,23 +1081,22 @@ header#home {
 /* ====== Responsive Design ====== */
 @media (max-width: 900px) {
   .about-container,
-  .projects-row,
   .certificates-row {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
-  .planets-row {
-    gap: 1.2rem;
+  .projects-row {
+    flex-direction: row;
+    gap: 2rem 1.2rem;
+    justify-content: center;
   }
-  .navbar {
-    padding: 0 1vw;
-  }
-  .nav-list {
-    gap: 1.1rem;
-  }
-  .navbar-logo {
-    font-size: 1.05rem;
+  .project-card {
+    width: 48%;
+    max-width: 420px;
+    min-width: 220px;
+    margin: 0 auto 2rem auto;
+    flex: 1 1 48%;
   }
 }
 
@@ -1070,6 +1116,14 @@ header#home {
   .navbar-hamburger {
     display: flex;
   }
+  .education-container,
+  .contact-container {
+    padding: 0 0.5rem;
+  }
+  .timeline {
+    padding-left: 0.5rem;
+    margin-left: 0.2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1080,11 +1134,21 @@ header#home {
     width: 110px;
     height: 110px;
   }
+  .education-container,
+  .skills-container,
+  .projects-container,
+  .certificates-container,
+  .contact-container {
+    padding: 0 0.5rem;
+  }
   .project-card,
   .certificate-card {
-    width: 95vw;
+    width: 100%;
     max-width: 340px;
+    min-width: 0;
     padding: 1.2rem 0.7rem;
+    margin: 0 0 2rem 0;
+    flex: 1 1 100%;
   }
   .footer-content h3 {
     font-size: 1.1rem;
