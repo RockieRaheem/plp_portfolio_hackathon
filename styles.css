@@ -45,14 +45,38 @@ body {
   height: 100%;
 }
 
-.navbar-profile-img {
-  width: 44px;
+.navbar-profile-img,
+.about-img {
+  width: 44px; /* .about-img can be larger if you want */
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2.5px solid #2ecc40;
-  box-shadow: 0 2px 8px #2ecc4040;
+  border: 3px solid #2ecc40;
+  box-shadow: 0 0 0 0 #2ecc40, 0 2px 8px #2ecc4040;
   background: #fff;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Larger about image */
+.about-img {
+  width: 150px;
+  height: 150px;
+  border-width: 4px;
+}
+
+/* Glowing effect on hover/focus */
+.navbar-profile-img:hover,
+.navbar-profile-img:focus,
+.about-img:hover,
+.about-img:focus {
+  box-shadow: 0 0 0 6px #2ecc4040, 0 0 24px 6px #2ecc40cc, 0 2px 16px #2ecc4040;
+  border-color: #00e676;
+  filter: brightness(1.08) saturate(1.2);
+  outline: none;
 }
 
 .navbar-name {
@@ -74,7 +98,7 @@ body {
 .navbar-name:focus {
   color: #fff;
   text-shadow: 0 0 16px #2ecc40, 0 0 8px #00b894;
-  transform: scale(1.08) rotate(-2deg);
+  transform: scale(1.08);
 }
 
 .navbar-name::after {
