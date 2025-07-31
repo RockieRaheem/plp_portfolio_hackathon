@@ -1,3 +1,121 @@
+/* Skills Section */
+.skills-section {
+  background: linear-gradient(120deg, #0a192f 80%, #1a2a3a 100%);
+  padding: 4rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(10, 25, 47, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+  padding: 2.2rem 2.5rem;
+}
+.skills-container h2 {
+  color: #7fffa6;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.planets-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.2rem 2.2rem;
+  margin-top: 1.5rem;
+}
+.planet {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7fffa6 40%, #1a2a3a 100%);
+  box-shadow: 0 0 24px 0 #7fffa6, 0 0 0 6px rgba(127, 255, 166, 0.08);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.planet:hover,
+.planet:focus {
+  transform: scale(1.13);
+  box-shadow: 0 0 32px 4px #7fffa6, 0 0 0 10px rgba(127, 255, 166, 0.13);
+  z-index: 2;
+}
+.planet::after {
+  content: attr(data-skill);
+  position: absolute;
+  bottom: -2.2rem;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  background: rgba(10, 25, 47, 0.92);
+  color: #7fffa6;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0.8rem;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px 0 #7fffa6;
+  letter-spacing: 1px;
+}
+.planet:hover::after,
+.planet:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.08);
+}
+
+/* Unique planet colors for each skill */
+.planet[data-skill="Python"] {
+  background: linear-gradient(135deg, #306998 60%, #7fffa6 100%);
+}
+.planet[data-skill="JavaScript"] {
+  background: linear-gradient(135deg, #f7e018 60%, #7fffa6 100%);
+}
+.planet[data-skill="React"] {
+  background: linear-gradient(135deg, #61dafb 60%, #7fffa6 100%);
+}
+.planet[data-skill="Next.js"] {
+  background: linear-gradient(135deg, #222 60%, #7fffa6 100%);
+}
+.planet[data-skill="Express"] {
+  background: linear-gradient(135deg, #222 60%, #7fffa6 100%);
+}
+.planet[data-skill="Node.js"] {
+  background: linear-gradient(135deg, #3c873a 60%, #7fffa6 100%);
+}
+.planet[data-skill="MongoDB"] {
+  background: linear-gradient(135deg, #13aa52 60%, #7fffa6 100%);
+}
+.planet[data-skill="Postgres"] {
+  background: linear-gradient(135deg, #336791 60%, #7fffa6 100%);
+}
+.planet[data-skill="HTML"] {
+  background: linear-gradient(135deg, #e44d26 60%, #7fffa6 100%);
+}
+.planet[data-skill="CSS"] {
+  background: linear-gradient(135deg, #264de4 60%, #7fffa6 100%);
+}
+
+@media (max-width: 900px) {
+  .planets-row {
+    gap: 1.2rem 1.2rem;
+  }
+  .planet {
+    width: 54px;
+    height: 54px;
+  }
+  .planet::after {
+    font-size: 0.92rem;
+    bottom: -1.7rem;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
