@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raheem's Eco-Space Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="stars-bg">
+        <!-- CSS Animated Stars  -->
+        <div class="star" id="star1"></div>
+        <div class="star" id="star2"></div>
+        <div class="star" id="star3"></div>
+        <div class="star" id="star4"></div>
+        <div class="star" id="star5"></div>
+        <div class="star" id="star6"></div>
+        <div class="star" id="star7"></div>
+        <div class="star" id="star8"></div>
+        <div class="star" id="star9"></div>
+        <div class="star" id="star10"></div>
+      </div>
+      <div class="intro-text">
+        <h1>Kamwanga Raheem</h1>
+        <h2>Software Engineering Student</h2>
+        <p>Solving real-world problems through sustainable technology</p>
+      </div>
+    </header>
+  </body>
+</html>
