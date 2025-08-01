@@ -164,7 +164,15 @@ body {
   }
 }
 
-/* ====== Homepage (Stars & Intro) ====== */
+/* ====== Homepage Section ====== */
+#home {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .stars-bg {
   position: absolute;
   top: 0;
@@ -259,11 +267,220 @@ body {
     opacity: 1;
   }
 }
+
+/* ====== Tech Stack Constellations ====== */
+.tech-constellation {
+  position: absolute;
+  z-index: 1;
+}
+
+.tech-constellation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      135deg,
+      transparent 40%,
+      #2ecc4015 45%,
+      #2ecc4015 55%,
+      transparent 60%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 40%,
+      #2ecc4015 45%,
+      #2ecc4015 55%,
+      transparent 60%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.tech-star {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #2ecc40;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #2ecc40, 0 0 24px #2ecc4060;
+  animation: techTwinkle 3s infinite alternate;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tech-star:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 20px #2ecc40, 0 0 40px #2ecc4080;
+}
+.tech-star::after {
+  content: attr(data-tech);
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(16, 24, 32, 0.95);
+  color: #2ecc40;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid #2ecc4040;
+  z-index: 10;
+}
+.tech-star:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* Leaf Constellation (Left side) */
+.leaf-constellation {
+  top: 25%;
+  left: 8%;
+  width: 180px;
+  height: 200px;
+}
+.leaf-constellation .tech-star:nth-child(1) {
+  top: 0;
+  left: 40%;
+}
+.leaf-constellation .tech-star:nth-child(2) {
+  top: 15%;
+  left: 60%;
+}
+.leaf-constellation .tech-star:nth-child(3) {
+  top: 30%;
+  left: 75%;
+}
+.leaf-constellation .tech-star:nth-child(4) {
+  top: 50%;
+  left: 80%;
+}
+.leaf-constellation .tech-star:nth-child(5) {
+  top: 70%;
+  left: 75%;
+}
+.leaf-constellation .tech-star:nth-child(6) {
+  top: 85%;
+  left: 60%;
+}
+.leaf-constellation .tech-star:nth-child(7) {
+  top: 95%;
+  left: 40%;
+}
+.leaf-constellation .tech-star:nth-child(8) {
+  top: 85%;
+  left: 20%;
+}
+.leaf-constellation .tech-star:nth-child(9) {
+  top: 70%;
+  left: 10%;
+}
+.leaf-constellation .tech-star:nth-child(10) {
+  top: 50%;
+  left: 5%;
+}
+.leaf-constellation .tech-star:nth-child(11) {
+  top: 30%;
+  left: 10%;
+}
+.leaf-constellation .tech-star:nth-child(12) {
+  top: 15%;
+  left: 25%;
+}
+
+/* Tree Constellation (Right side) */
+.tree-constellation {
+  top: 20%;
+  right: 8%;
+  width: 160px;
+  height: 220px;
+}
+/* Tree trunk */
+.tree-constellation .tech-star:nth-child(1) {
+  bottom: 0;
+  left: 45%;
+}
+.tree-constellation .tech-star:nth-child(2) {
+  bottom: 8%;
+  left: 50%;
+}
+.tree-constellation .tech-star:nth-child(3) {
+  bottom: 16%;
+  left: 45%;
+}
+/* Tree branches and leaves */
+.tree-constellation .tech-star:nth-child(4) {
+  top: 60%;
+  left: 35%;
+}
+.tree-constellation .tech-star:nth-child(5) {
+  top: 50%;
+  left: 50%;
+}
+.tree-constellation .tech-star:nth-child(6) {
+  top: 60%;
+  left: 65%;
+}
+.tree-constellation .tech-star:nth-child(7) {
+  top: 40%;
+  left: 25%;
+}
+.tree-constellation .tech-star:nth-child(8) {
+  top: 30%;
+  left: 45%;
+}
+.tree-constellation .tech-star:nth-child(9) {
+  top: 40%;
+  left: 75%;
+}
+.tree-constellation .tech-star:nth-child(10) {
+  top: 20%;
+  left: 20%;
+}
+.tree-constellation .tech-star:nth-child(11) {
+  top: 10%;
+  left: 40%;
+}
+.tree-constellation .tech-star:nth-child(12) {
+  top: 5%;
+  left: 60%;
+}
+.tree-constellation .tech-star:nth-child(13) {
+  top: 20%;
+  left: 80%;
+}
+
+@keyframes techTwinkle {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+}
+
 .intro-text {
   position: relative;
   z-index: 1;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 6.5rem;
+  min-height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .intro-text h1 {
   font-size: 2.8rem;
@@ -283,9 +500,12 @@ body {
 }
 
 /* ====== About Section ====== */
-.about-section {
+#about {
   padding: 5rem 0 3rem 0;
-  background: transparent;
+  background: rgba(22, 34, 42, 0.3);
+}
+
+.about-section {
   display: flex;
   justify-content: center;
 }
@@ -323,8 +543,8 @@ body {
   font-size: 1.1rem;
 }
 
-/* ====== Education Timeline ====== */
-.education-section {
+/* ====== Education Section ====== */
+#education {
   background: #16222a;
   padding: 4rem 0 3rem 0;
 }
@@ -381,7 +601,7 @@ body {
 /* =====================
    Skills Section Styles (Planetary Display)
 ====================== */
-.skills-section {
+#skills {
   background: #101820;
   padding: 4rem 0 3rem 0;
 }
@@ -485,7 +705,7 @@ body {
 /* =====================
    Projects Section Styles (Project Cards Display)
 ====================== */
-.projects-section {
+#projects {
   background: #16222a;
   padding: 4rem 0 3rem 0;
 }
@@ -565,7 +785,7 @@ body {
 }
 
 /* ====== Certificates Section ====== */
-.certificates-section {
+#certificates {
   background: #101820;
   padding: 4rem 0 3rem 0;
 }
@@ -620,7 +840,7 @@ body {
 }
 
 /* ====== Contact Section ====== */
-.contact-section {
+#contact {
   background: #16222a;
   padding: 4rem 0 3rem 0;
 }
@@ -733,7 +953,7 @@ body {
   transform: translateX(-50%) scale(1.05);
 }
 
-/* ====== Footer ====== */
+/* ====== Footer Section ====== */
 .footer {
   background: linear-gradient(90deg, #101820 60%, #2ecc40 100%);
   color: #e0f2e9;
@@ -794,6 +1014,9 @@ body {
 
 /* ====== Responsive Design ====== */
 @media (max-width: 900px) {
+  .tech-constellation {
+    display: none;
+  }
   .about-container,
   .certificates-row {
     flex-direction: column;
