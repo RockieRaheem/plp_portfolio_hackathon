@@ -1572,32 +1572,55 @@
       document.addEventListener("DOMContentLoaded", function () {
         const navTabs = document.querySelectorAll(".nav-tab");
         const storySections = document.querySelectorAll(".story-section");
+        let isTransitioning = false;
 
+        // Smooth section transition function
+        function transitionToSection(targetSection) {
+          if (isTransitioning) return;
+          isTransitioning = true;
+
+          // Find current active section
+          const currentActive = document.querySelector(".story-section.active");
+          const targetElement = document.querySelector(
+            `[data-section="${targetSection}"]`
+          );
+
+          if (currentActive === targetElement) {
+            isTransitioning = false;
+            return;
+          }
+
+          // Add exiting class to current section
+          if (currentActive) {
+            currentActive.classList.add("exiting");
+
+            // Remove active class after a brief delay
+            setTimeout(() => {
+              currentActive.classList.remove("active", "exiting");
+            }, 300);
+          }
+
+          // Activate target section with slight delay
+          setTimeout(() => {
+            targetElement.classList.add("active");
+            isTransitioning = false;
+          }, 150);
+        }
+
+        // Tab click handler
         navTabs.forEach((tab) => {
-          tab.addEventListener("click", function () {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (isTransitioning) return;
+
             const targetSection = this.getAttribute("data-target");
 
-            // Remove active class from all tabs and sections
+            // Update active tab
             navTabs.forEach((t) => t.classList.remove("active"));
-            storySections.forEach((s) => s.classList.remove("active"));
-
-            // Add active class to clicked tab and corresponding section
             this.classList.add("active");
-            document
-              .querySelector(`[data-section="${targetSection}"]`)
-              .classList.add("active");
 
-            // Add smooth transition effect
-            const activeSection = document.querySelector(
-              `[data-section="${targetSection}"]`
-            );
-            activeSection.style.transform = "translateX(-20px)";
-            activeSection.style.opacity = "0";
-
-            setTimeout(() => {
-              activeSection.style.transform = "translateX(0)";
-              activeSection.style.opacity = "1";
-            }, 50);
+            // Transition to target section
+            transitionToSection(targetSection);
           });
         });
 
@@ -1775,16 +1798,32 @@
         `;
         document.head.appendChild(style);
 
-        // Auto-cycle through story tabs (optional)
+        // Auto-cycle through story tabs with smooth transitions
         let currentTabIndex = 0;
-        const tabCycleInterval = 10000; // 10 seconds
+        const tabCycleInterval = 8000; // 8 seconds
 
-        setInterval(() => {
-          if (navTabs.length > 0) {
-            navTabs[currentTabIndex].click();
+        function autoSwitchTab() {
+          if (navTabs.length > 0 && !isTransitioning) {
+            // Update active tab
+            navTabs.forEach((t) => t.classList.remove("active"));
+            navTabs[currentTabIndex].classList.add("active");
+
+            // Get target section
+            const targetSection =
+              navTabs[currentTabIndex].getAttribute("data-target");
+
+            // Smooth transition to next section
+            transitionToSection(targetSection);
+
+            // Move to next tab
             currentTabIndex = (currentTabIndex + 1) % navTabs.length;
           }
-        }, tabCycleInterval);
+        }
+
+        // Start auto-cycling after initial load
+        setTimeout(() => {
+          setInterval(autoSwitchTab, tabCycleInterval);
+        }, 3000); // Wait 3 seconds before starting auto-cycle
       });
     </script>
   </body>
