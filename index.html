@@ -508,266 +508,333 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
       <div class="projects-container">
-        <!-- Section Header -->
+        <!-- Dynamic Header -->
         <div class="projects-header">
-          <div class="header-content">
-            <h2 class="projects-title">Featured Projects</h2>
-            <p class="projects-subtitle">
-              Innovative solutions built with passion and cutting-edge
-              technology
+          <div class="header-text">
+            <h2 class="section-title">
+              <span class="title-accent">🚀</span>
+              Featured Projects
+              <span class="title-line"></span>
+            </h2>
+            <p class="section-subtitle">
+              Innovative solutions that make a difference
             </p>
           </div>
-          <div class="header-decoration">
-            <div class="decoration-elements">
-              <span class="decoration-icon">🚀</span>
-              <div class="decoration-line"></div>
-            </div>
+          <div class="projects-nav">
+            <button class="nav-btn active" data-filter="all">
+              All Projects
+            </button>
+            <button class="nav-btn" data-filter="live">Live Apps</button>
+            <button class="nav-btn" data-filter="development">
+              In Development
+            </button>
           </div>
         </div>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-          <!-- Project 1 - ScholarHunt (Featured/Large) -->
-          <div class="project-item featured">
-            <div class="project-card">
-              <div class="project-image-container">
+        <!-- Interactive Projects Showcase -->
+        <div class="projects-showcase">
+          <!-- Featured Project Slider -->
+          <div class="featured-project">
+            <div class="project-preview">
+              <div class="preview-image">
                 <img
-                  class="project-image"
                   src="Images/scholarHunt.png"
-                  alt="ScholarHunt Platform Screenshot"
+                  alt="ScholarHunt Platform"
+                  class="main-preview"
                 />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <span class="project-status live">🟢 Live</span>
-                    <span class="project-category">Web Platform</span>
-                  </div>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-header">
-                  <h3 class="project-title">ScholarHunt Platform</h3>
-                  <div class="project-links">
+                <div class="preview-overlay">
+                  <div class="overlay-actions">
                     <a
                       href="https://scholar-hunt-theta.vercel.app"
-                      class="project-link primary"
                       target="_blank"
+                      class="action-btn primary"
                     >
-                      <span class="link-icon">🌐</span>
+                      <span class="btn-icon">🌐</span>
                       Live Demo
                     </a>
+                    <button
+                      class="action-btn secondary"
+                      onclick="showProjectDetails(0)"
+                    >
+                      <span class="btn-icon">📋</span>
+                      Details
+                    </button>
                   </div>
                 </div>
-                <p class="project-description">
-                  A comprehensive scholarship discovery platform designed to
-                  democratize educational opportunities. Features advanced
-                  filtering algorithms, personalized recommendations, and
-                  intuitive dashboards for students seeking funding
-                  opportunities. Built with modern technologies to ensure
-                  optimal performance and user experience.
+              </div>
+              <div class="preview-info">
+                <div class="project-meta">
+                  <span class="status-badge live">🟢 Live</span>
+                  <span class="category-tag">Web Platform</span>
+                </div>
+                <h3 class="project-name">ScholarHunt Platform</h3>
+                <p class="project-brief">
+                  Democratizing educational opportunities through advanced
+                  scholarship discovery
                 </p>
-                <div class="project-tech-stack">
-                  <span class="tech-badge primary">Next.js</span>
-                  <span class="tech-badge primary">React</span>
-                  <span class="tech-badge secondary">TypeScript</span>
-                  <span class="tech-badge secondary">Firebase</span>
-                  <span class="tech-badge accent">Tailwind CSS</span>
-                </div>
-                <div class="project-metrics">
-                  <div class="metric-item">
-                    <span class="metric-icon">👥</span>
-                    <span class="metric-text">Growing User Base</span>
-                  </div>
-                  <div class="metric-item">
-                    <span class="metric-icon">⚡</span>
-                    <span class="metric-text">Real-time Search</span>
-                  </div>
+                <div class="tech-preview">
+                  <span class="tech-pill">Next.js</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-more">+2 more</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 - Elith Pharmacy -->
-          <div class="project-item standard">
-            <div class="project-card">
-              <div class="project-image-container">
-                <img
-                  class="project-image"
-                  src="Images/elithpharmacy.png"
-                  alt="Elith Pharmacy System Screenshot"
-                />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <span class="project-status live">🟢 Live</span>
-                    <span class="project-category">Healthcare</span>
+          <!-- Projects Grid: 2x2 Layout -->
+          <div class="projects-grid">
+            <!-- Project Card 1: Elith Pharmacy -->
+            <div class="featured-project">
+              <div class="project-preview">
+                <div class="preview-image">
+                  <img
+                    src="Images/elithpharmacy.png"
+                    alt="Elith Pharmacy System"
+                    class="main-preview"
+                  />
+                  <div class="preview-overlay">
+                    <div class="overlay-actions">
+                      <a
+                        href="https://elith-pharmacy.vercel.app"
+                        target="_blank"
+                        class="action-btn primary"
+                      >
+                        <span class="btn-icon">🏥</span>
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/RockieRaheem/Elith-Pharmacy"
+                        target="_blank"
+                        class="action-btn secondary"
+                      >
+                        <span class="btn-icon">📋</span>
+                        Source Code
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="project-content">
-                <div class="project-header">
-                  <h3 class="project-title">Elith Pharmacy System</h3>
-                  <div class="project-links">
-                    <a
-                      href="https://elith-pharmacy.vercel.app"
-                      class="project-link primary"
-                      target="_blank"
-                    >
-                      <span class="link-icon">🏥</span>
-                      View App
-                    </a>
+                <div class="preview-info">
+                  <div class="project-meta">
+                    <span class="status-badge live">🟢 Live</span>
+                    <span class="category-tag">Healthcare</span>
                   </div>
-                </div>
-                <p class="project-description">
-                  Revolutionary digital healthcare platform streamlining
-                  pharmacy operations and patient care. Implements secure
-                  prescription management, real-time inventory tracking, and
-                  telemedicine consultations.
-                </p>
-                <div class="project-tech-stack">
-                  <span class="tech-badge primary">Next.js</span>
-                  <span class="tech-badge primary">React</span>
-                  <span class="tech-badge secondary">TypeScript</span>
-                  <span class="tech-badge secondary">Firebase</span>
-                  <span class="tech-badge accent">Tailwind CSS</span>
+                  <h3 class="project-name">Elith Pharmacy System</h3>
+                  <p class="project-brief">
+                    Revolutionary healthcare platform streamlining pharmacy
+                    operations with real-time inventory management, prescription
+                    tracking, and patient care optimization.
+                  </p>
+                  <div class="tech-preview">
+                    <span class="tech-pill">Next.js</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">Firebase</span>
+                    <span class="tech-more">+1 more</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Project 3 - Afro Shop UG -->
-          <div class="project-item standard">
-            <div class="project-card">
-              <div class="project-image-container">
-                <img
-                  class="project-image"
-                  src="Images/afroshop.png"
-                  alt="Afro Shop UG Screenshot"
-                />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <span class="project-status development">🟡 GitHub</span>
-                    <span class="project-category">E-commerce</span>
+            <!-- Project Card 2: Afro Shop Uganda -->
+            <div class="featured-project">
+              <div class="project-preview">
+                <div class="preview-image">
+                  <img
+                    src="Images/afroshop.png"
+                    alt="Afro Shop Uganda"
+                    class="main-preview"
+                  />
+                  <div class="preview-overlay">
+                    <div class="overlay-actions">
+                      <a
+                        href="https://github.com/RockieRaheem/AfroShopUg"
+                        target="_blank"
+                        class="action-btn primary"
+                      >
+                        <span class="btn-icon">👟</span>
+                        View Code
+                      </a>
+                      <a href="#" class="action-btn secondary disabled">
+                        <span class="btn-icon">🚧</span>
+                        In Development
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="project-content">
-                <div class="project-header">
-                  <h3 class="project-title">Afro Shop Uganda</h3>
-                  <div class="project-links">
-                    <a
-                      href="https://github.com/RockieRaheem/AfroShopUg"
-                      class="project-link secondary"
-                      target="_blank"
-                    >
-                      <span class="link-icon">👟</span>
-                      View Code
-                    </a>
+                <div class="preview-info">
+                  <div class="project-meta">
+                    <span class="status-badge development">🔄 GitHub</span>
+                    <span class="category-tag">E-commerce</span>
                   </div>
-                </div>
-                <p class="project-description">
-                  Specialized shoe marketplace celebrating African footwear
-                  culture and craftsmanship. Features secure payment processing,
-                  comprehensive inventory management, and user-friendly shopping
-                  experience.
-                </p>
-                <div class="project-tech-stack">
-                  <span class="tech-badge vanilla">Vanilla JavaScript</span>
-                  <span class="tech-badge vanilla">HTML5</span>
-                  <span class="tech-badge vanilla">CSS3</span>
+                  <h3 class="project-name">Afro Shop Uganda</h3>
+                  <p class="project-brief">
+                    Authentic African footwear marketplace showcasing
+                    traditional and modern shoe designs, connecting local
+                    artisans with global customers through innovative e-commerce
+                    solutions.
+                  </p>
+                  <div class="tech-preview">
+                    <span class="tech-pill">JavaScript</span>
+                    <span class="tech-pill">HTML5</span>
+                    <span class="tech-pill">CSS3</span>
+                    <span class="tech-more">+1 more</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Project 4 - EcoSmart Waste Management -->
-          <div class="project-item standard">
-            <div class="project-card">
-              <div class="project-image-container">
-                <img
-                  class="project-image"
-                  src="Images/wasteMgtSystem.png"
-                  alt="Smart Waste Management Screenshot"
-                />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <span class="project-status development">🟡 GitHub</span>
-                    <span class="project-category">Sustainability</span>
+            <!-- Project Card 3: EcoSmart Waste Management -->
+            <div class="featured-project">
+              <div class="project-preview">
+                <div class="preview-image">
+                  <img
+                    src="Images/wasteMgtSystem.png"
+                    alt="EcoSmart Waste Management"
+                    class="main-preview"
+                  />
+                  <div class="preview-overlay">
+                    <div class="overlay-actions">
+                      <a
+                        href="https://github.com/RockieRaheem/Smart-Waste-Management"
+                        target="_blank"
+                        class="action-btn primary"
+                      >
+                        <span class="btn-icon">🌱</span>
+                        Explore Code
+                      </a>
+                      <a href="#" class="action-btn secondary disabled">
+                        <span class="btn-icon">🔬</span>
+                        Research Phase
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-info">
+                  <div class="project-meta">
+                    <span class="status-badge development">🔄 GitHub</span>
+                    <span class="category-tag">Sustainability</span>
+                  </div>
+                  <h3 class="project-name">EcoSmart Waste Management</h3>
+                  <p class="project-brief">
+                    Intelligent waste management system using IoT sensors and AI
+                    analytics to optimize collection routes, reduce
+                    environmental impact, and promote sustainable urban living.
+                  </p>
+                  <div class="tech-preview">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Django</span>
+                    <span class="tech-pill">IoT</span>
+                    <span class="tech-more">+1 more</span>
                   </div>
                 </div>
               </div>
-              <div class="project-content">
-                <div class="project-header">
-                  <h3 class="project-title">EcoSmart Waste Management</h3>
-                  <div class="project-links">
-                    <a
-                      href="https://github.com/RockieRaheem/Smart-Waste-Management"
-                      class="project-link secondary"
-                      target="_blank"
-                    >
-                      <span class="link-icon">🌱</span>
-                      Explore Code
-                    </a>
+            </div>
+
+            <!-- Project Card 4: Portfolio Website -->
+            <div class="project-card" data-category="live">
+              <div class="card-image">
+                <img src="Images/profileImage.jpg" alt="Portfolio Website" />
+                <div class="image-overlay">
+                  <div class="overlay-content">
+                    <div class="overlay-actions">
+                      <a href="#home" class="action-btn primary">
+                        <span class="btn-icon">�</span>
+                        You're Here!
+                      </a>
+                      <a
+                        href="https://github.com/RockieRaheem/plp_portfolio_hackathon"
+                        target="_blank"
+                        class="action-btn secondary"
+                      >
+                        <span class="btn-icon">📋</span>
+                        Source Code
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <p class="project-description">
-                  Comprehensive waste management solution revolutionizing waste
-                  collection and environmental monitoring. Features real-time
-                  data tracking, predictive analytics for route optimization,
-                  and comprehensive dashboard for municipal authorities.
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="status-badges">
+                    <span class="status-badge live">🟢 Live</span>
+                    <span class="category-badge">Portfolio</span>
+                  </div>
+                </div>
+                <h3 class="card-title">Portfolio Website</h3>
+                <p class="card-description">
+                  Modern, responsive portfolio showcasing my journey as a
+                  software engineer with interactive animations, sustainable
+                  design principles, and optimal user experience.
                 </p>
-                <div class="project-tech-stack">
-                  <span class="tech-badge python">Python</span>
-                  <span class="tech-badge python">Django</span>
-                  <span class="tech-badge database">PostgreSQL</span>
-                  <span class="tech-badge frontend">HTML5</span>
-                  <span class="tech-badge frontend">Bootstrap</span>
+                <div class="tech-stack">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Responsive Design</span>
+                </div>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/RockieRaheem/plp_portfolio_hackathon"
+                    target="_blank"
+                    class="card-link"
+                  >
+                    <span class="link-icon">📂</span>
+                    Source Code
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Projects Summary -->
-        <div class="projects-summary">
-          <div class="summary-content">
-            <div class="summary-stats">
-              <div class="stat-card">
-                <div class="stat-icon">🚀</div>
-                <div class="stat-info">
-                  <div class="stat-number">4</div>
-                  <div class="stat-label">Active Projects</div>
+        <!-- Project Stats Dashboard -->
+        <div class="projects-dashboard">
+          <div class="dashboard-stats">
+            <div class="stat-item">
+              <div class="stat-visual">
+                <div class="stat-circle" data-percentage="100">
+                  <div class="circle-fill"></div>
+                  <span class="stat-number">3</span>
                 </div>
               </div>
-              <div class="stat-card">
-                <div class="stat-icon">🌐</div>
-                <div class="stat-info">
-                  <div class="stat-number">2</div>
-                  <div class="stat-label">Live Applications</div>
-                </div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-icon">💡</div>
-                <div class="stat-info">
-                  <div class="stat-number">5+</div>
-                  <div class="stat-label">Technologies Used</div>
-                </div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-info">
-                  <div class="stat-number">100%</div>
-                  <div class="stat-label">Passion Driven</div>
-                </div>
-              </div>
+              <div class="stat-label">Active Projects</div>
             </div>
-            <div class="summary-cta">
-              <p class="cta-text">
-                Want to see more of my work or collaborate on a project?
-              </p>
-              <a href="#contact" class="cta-button">
-                <span class="cta-icon">💬</span>
-                Let's Talk
-              </a>
+            <div class="stat-item">
+              <div class="stat-visual">
+                <div class="stat-circle" data-percentage="80">
+                  <div class="circle-fill"></div>
+                  <span class="stat-number">2</span>
+                </div>
+              </div>
+              <div class="stat-label">Live Apps</div>
             </div>
+            <div class="stat-item">
+              <div class="stat-visual">
+                <div class="stat-circle" data-percentage="90">
+                  <div class="circle-fill"></div>
+                  <span class="stat-number">8+</span>
+                </div>
+              </div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-visual">
+                <div class="stat-circle" data-percentage="95">
+                  <div class="circle-fill"></div>
+                  <span class="stat-number">100%</span>
+                </div>
+              </div>
+              <div class="stat-label">Passion</div>
+            </div>
+          </div>
+          <div class="dashboard-cta">
+            <h3>Ready to collaborate?</h3>
+            <p>Let's build something amazing together</p>
+            <a href="#contact" class="cta-btn">
+              <span class="cta-icon">💬</span>
+              Start Conversation
+              <span class="cta-arrow">→</span>
+            </a>
           </div>
         </div>
       </div>
