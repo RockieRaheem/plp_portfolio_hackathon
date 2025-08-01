@@ -94,127 +94,315 @@
 
     <!-- About Section -->
     <section id="about" class="about-section">
-      <div class="about-container">
-        <div class="about-img-wrapper">
-          <img
-            src="Images/profileImage.jpg"
-            alt="Raheem's Profile Picture"
-            class="about-img"
-          />
+      <!-- Background Elements -->
+      <div class="about-bg-elements">
+        <div class="floating-shapes">
+          <div class="shape-1"></div>
+          <div class="shape-2"></div>
+          <div class="shape-3"></div>
         </div>
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p>
-            Hello! I'm <strong>Kamwanga Raheem</strong>, a passionate
-            23-year-old Software Engineering student at Uganda Technology and
-            Management University (UTAMU). My journey in technology is driven by
-            an unwavering commitment to creating innovative solutions that
-            bridge the gap between cutting-edge development and environmental
-            sustainability.
-          </p>
-          <p>
-            As a dedicated Full Stack Developer, I specialize in building robust
-            web applications using modern frameworks like React, Next.js, and
-            Node.js. My expertise spans across the entire development lifecycle,
-            from crafting intuitive user interfaces to architecting scalable
-            backend systems. I'm particularly fascinated by Green Software
-            practices, constantly exploring ways to minimize digital carbon
-            footprints while maximizing performance.
-          </p>
-          <p>
-            Beyond coding, I believe in maintaining a balanced lifestyle. I find
-            strength and discipline through boxing and regular gym sessions,
-            which enhance my problem-solving mindset. Soccer fuels my
-            competitive spirit and teamwork skills, while music serves as my
-            creative catalyst during development sessions. This blend of
-            technical expertise and personal passions drives my mission to make
-            a meaningful impact on the world through technology.
-          </p>
+        <div class="code-rain">
+          <span>const</span>
+          <span>function</span>
+          <span>return</span>
+          <span>async</span>
+          <span>await</span>
+        </div>
+      </div>
 
-          <!-- Interests Section -->
-          <div class="interests-section">
-            <h3>My Interests & Passions</h3>
-            <div class="interests-grid">
-              <div class="interest-item professional">
-                <span class="interest-icon">💻</span>
-                <div class="interest-content">
-                  <h4>Web Development</h4>
-                  <p>
-                    Exploring modern frameworks and best practices to create
-                    cutting-edge digital experiences
-                  </p>
+      <div class="about-container">
+        <!-- Section Header -->
+        <div class="about-header">
+          <div class="header-content">
+            <span class="section-label">🌟 Get to Know Me</span>
+            <h2 class="section-title">
+              Crafting Digital Experiences with
+              <span class="highlight">Purpose</span>
+            </h2>
+            <p class="section-subtitle">
+              Where innovation meets sustainability, and code becomes impact
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="about-content-grid">
+          <!-- Profile Panel -->
+          <div class="profile-panel">
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <div class="image-frame">
+                  <img
+                    src="Images/profileImage.jpg"
+                    alt="Raheem's Profile Picture"
+                    class="profile-image"
+                  />
+                  <div class="image-overlay">
+                    <div class="status-indicator">
+                      <span class="status-dot"></span>
+                      <span class="status-text"
+                        >Available for opportunities</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-decoration">
+                  <div class="decoration-ring"></div>
+                  <div class="floating-icons">
+                    <span class="icon icon-1">⚡</span>
+                    <span class="icon icon-2">🎯</span>
+                    <span class="icon icon-3">🚀</span>
+                  </div>
                 </div>
               </div>
-              <div class="interest-item professional">
-                <span class="interest-icon">🚀</span>
-                <div class="interest-content">
-                  <h4>Tech Innovations</h4>
-                  <p>
-                    Keeping up with emerging trends in technology and pioneering
-                    sustainable solutions
-                  </p>
+
+              <!-- Quick Stats -->
+              <div class="quick-stats">
+                <div class="stat-item">
+                  <div class="stat-number">23</div>
+                  <div class="stat-label">Years Old</div>
                 </div>
-              </div>
-              <div class="interest-item professional">
-                <span class="interest-icon">🌱</span>
-                <div class="interest-content">
-                  <h4>Green Software</h4>
-                  <p>
-                    Building environmentally sustainable technology solutions
-                    for a better tomorrow
-                  </p>
+                <div class="stat-item">
+                  <div class="stat-number">3+</div>
+                  <div class="stat-label">Years Coding</div>
                 </div>
-              </div>
-              <div class="interest-item personal">
-                <span class="interest-icon">🥊</span>
-                <div class="interest-content">
-                  <h4>Boxing & Fitness</h4>
-                  <p>
-                    Training in boxing and gym sessions to maintain discipline
-                    and physical wellness
-                  </p>
-                </div>
-              </div>
-              <div class="interest-item personal">
-                <span class="interest-icon">⚽</span>
-                <div class="interest-content">
-                  <h4>Soccer Enthusiast</h4>
-                  <p>
-                    Passionate about soccer, both playing and following
-                    international competitions
-                  </p>
-                </div>
-              </div>
-              <div class="interest-item personal">
-                <span class="interest-icon">🎵</span>
-                <div class="interest-content">
-                  <h4>Music & Relaxation</h4>
-                  <p>
-                    Listening to diverse music genres for inspiration and
-                    creative energy
-                  </p>
+                <div class="stat-item">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Projects</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CV Download Section -->
-          <div class="cv-download-section">
-            <h3>Download My CV</h3>
-            <p>
-              Get a comprehensive overview of my education, experience, and
-              achievements
-            </p>
-            <a
-              href="CV_Kamwanga_Raheem.pdf"
-              class="cv-download-btn"
-              download="Kamwanga_Raheem_CV.pdf"
-              target="_blank"
-            >
-              <span class="cv-icon">📄</span>
-              <span class="cv-text">Download CV (PDF)</span>
-              <span class="cv-size">~250KB</span>
-            </a>
+          <!-- Story Panel -->
+          <div class="story-panel">
+            <div class="story-content">
+              <!-- Introduction Tab -->
+              <div class="story-section active" data-section="intro">
+                <div class="story-header">
+                  <h3 class="story-title">Hello, I'm Raheem 👋</h3>
+                  <div class="typing-indicator">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="story-text">
+                  <p class="intro-text">
+                    A passionate
+                    <strong>Software Engineering student</strong> at Uganda
+                    Technology and Management University (UTAMU), driven by an
+                    unwavering commitment to creating innovative solutions that
+                    bridge cutting-edge development with environmental
+                    sustainability.
+                  </p>
+                  <p>
+                    As a dedicated <em>Full Stack Developer</em>, I specialize
+                    in building robust web applications using modern frameworks
+                    like React, Next.js, and Node.js. My expertise spans the
+                    entire development lifecycle, from crafting intuitive user
+                    interfaces to architecting scalable backend systems.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Mission Tab -->
+              <div class="story-section" data-section="mission">
+                <div class="story-header">
+                  <h3 class="story-title">My Mission 🌱</h3>
+                </div>
+                <div class="story-text">
+                  <p>
+                    I'm particularly fascinated by
+                    <strong>Green Software practices</strong>, constantly
+                    exploring ways to minimize digital carbon footprints while
+                    maximizing performance. Every line of code I write considers
+                    its environmental impact.
+                  </p>
+                  <div class="mission-highlights">
+                    <div class="highlight-item">
+                      <span class="highlight-icon">🌍</span>
+                      <span class="highlight-text"
+                        >Sustainable Tech Solutions</span
+                      >
+                    </div>
+                    <div class="highlight-item">
+                      <span class="highlight-icon">⚡</span>
+                      <span class="highlight-text"
+                        >Performance Optimization</span
+                      >
+                    </div>
+                    <div class="highlight-item">
+                      <span class="highlight-icon">🔄</span>
+                      <span class="highlight-text"
+                        >Circular Design Thinking</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Beyond Code Tab -->
+              <div class="story-section" data-section="beyond">
+                <div class="story-header">
+                  <h3 class="story-title">Beyond Code 🎨</h3>
+                </div>
+                <div class="story-text">
+                  <p>
+                    I believe in maintaining a balanced lifestyle. Boxing and
+                    gym sessions enhance my problem-solving mindset, soccer
+                    fuels my competitive spirit and teamwork skills, while music
+                    serves as my creative catalyst during development sessions.
+                  </p>
+                  <p>
+                    This blend of technical expertise and personal passions
+                    drives my mission to make a meaningful impact on the world
+                    through technology.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Navigation Tabs -->
+              <div class="story-nav">
+                <button class="nav-tab active" data-target="intro">
+                  <span class="tab-icon">👋</span>
+                  <span class="tab-text">Introduction</span>
+                </button>
+                <button class="nav-tab" data-target="mission">
+                  <span class="tab-icon">🌱</span>
+                  <span class="tab-text">Mission</span>
+                </button>
+                <button class="nav-tab" data-target="beyond">
+                  <span class="tab-icon">🎨</span>
+                  <span class="tab-text">Beyond Code</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interests & Passions Panel -->
+          <div class="interests-panel">
+            <div class="panel-header">
+              <h3 class="panel-title">
+                <span class="title-icon">⚡</span>
+                Interests & Passions
+              </h3>
+              <p class="panel-subtitle">
+                What drives my creativity and innovation
+              </p>
+            </div>
+
+            <div class="interests-carousel">
+              <div class="interests-track">
+                <!-- Professional Interests -->
+                <div class="interest-category professional">
+                  <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h4 class="category-title">Professional</h4>
+                  </div>
+                  <div class="interest-cards">
+                    <div class="interest-card">
+                      <div class="card-icon">💻</div>
+                      <div class="card-content">
+                        <h5>Web Development</h5>
+                        <p>Modern frameworks & cutting-edge experiences</p>
+                      </div>
+                    </div>
+                    <div class="interest-card">
+                      <div class="card-icon">🚀</div>
+                      <div class="card-content">
+                        <h5>Tech Innovation</h5>
+                        <p>Emerging trends & sustainable solutions</p>
+                      </div>
+                    </div>
+                    <div class="interest-card">
+                      <div class="card-icon">🌱</div>
+                      <div class="card-content">
+                        <h5>Green Software</h5>
+                        <p>Environmentally conscious development</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="interest-category personal">
+                  <div class="category-header">
+                    <span class="category-icon">🎯</span>
+                    <h4 class="category-title">Personal</h4>
+                  </div>
+                  <div class="interest-cards">
+                    <div class="interest-card">
+                      <div class="card-icon">🥊</div>
+                      <div class="card-content">
+                        <h5>Boxing & Fitness</h5>
+                        <p>Discipline & mental strength training</p>
+                      </div>
+                    </div>
+                    <div class="interest-card">
+                      <div class="card-icon">⚽</div>
+                      <div class="card-content">
+                        <h5>Soccer</h5>
+                        <p>Team spirit & competitive excellence</p>
+                      </div>
+                    </div>
+                    <div class="interest-card">
+                      <div class="card-icon">🎵</div>
+                      <div class="card-content">
+                        <h5>Music</h5>
+                        <p>Creative inspiration & relaxation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Panel -->
+          <div class="action-panel">
+            <div class="action-content">
+              <div class="action-header">
+                <h3 class="action-title">Ready to Connect?</h3>
+                <p class="action-subtitle">
+                  Let's discuss your next project or just have a chat about
+                  technology
+                </p>
+              </div>
+
+              <div class="action-buttons">
+                <a href="#contact" class="action-btn primary">
+                  <span class="btn-icon">💬</span>
+                  <span class="btn-text">Start Conversation</span>
+                  <span class="btn-arrow">→</span>
+                </a>
+
+                <a
+                  href="CV_Kamwanga_Raheem.pdf"
+                  class="action-btn secondary"
+                  download="Kamwanga_Raheem_CV.pdf"
+                  target="_blank"
+                >
+                  <span class="btn-icon">📄</span>
+                  <span class="btn-text">Download Resume</span>
+                  <span class="btn-size">~250KB</span>
+                </a>
+              </div>
+
+              <!-- Quick Links -->
+              <div class="quick-links">
+                <a href="#skills" class="quick-link">
+                  <span class="link-icon">⚡</span>
+                  <span class="link-text">View Skills</span>
+                </a>
+                <a href="#projects" class="quick-link">
+                  <span class="link-icon">🚀</span>
+                  <span class="link-text">See Projects</span>
+                </a>
+                <a href="#certificates" class="quick-link">
+                  <span class="link-icon">🏆</span>
+                  <span class="link-text">Achievements</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1377,5 +1565,227 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript for Interactive About Section -->
+    <script>
+      // About Section Tab Navigation
+      document.addEventListener("DOMContentLoaded", function () {
+        const navTabs = document.querySelectorAll(".nav-tab");
+        const storySections = document.querySelectorAll(".story-section");
+
+        navTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const targetSection = this.getAttribute("data-target");
+
+            // Remove active class from all tabs and sections
+            navTabs.forEach((t) => t.classList.remove("active"));
+            storySections.forEach((s) => s.classList.remove("active"));
+
+            // Add active class to clicked tab and corresponding section
+            this.classList.add("active");
+            document
+              .querySelector(`[data-section="${targetSection}"]`)
+              .classList.add("active");
+
+            // Add smooth transition effect
+            const activeSection = document.querySelector(
+              `[data-section="${targetSection}"]`
+            );
+            activeSection.style.transform = "translateX(-20px)";
+            activeSection.style.opacity = "0";
+
+            setTimeout(() => {
+              activeSection.style.transform = "translateX(0)";
+              activeSection.style.opacity = "1";
+            }, 50);
+          });
+        });
+
+        // Profile image hover effect
+        const profileImage = document.querySelector(".profile-image");
+        const imageFrame = document.querySelector(".image-frame");
+
+        if (profileImage && imageFrame) {
+          imageFrame.addEventListener("mouseenter", function () {
+            profileImage.style.transform = "scale(1.1) rotate(5deg)";
+          });
+
+          imageFrame.addEventListener("mouseleave", function () {
+            profileImage.style.transform = "scale(1) rotate(0deg)";
+          });
+        }
+
+        // Animated counter for stats
+        function animateCounter(element, target, duration = 2000) {
+          const start = 0;
+          const increment = target / (duration / 16);
+          let current = start;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+
+            if (target.toString().includes("+")) {
+              element.textContent = Math.floor(current) + "+";
+            } else {
+              element.textContent = Math.floor(current);
+            }
+          }, 16);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+          threshold: 0.3,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-in");
+
+              // Animate counters when they come into view
+              if (entry.target.classList.contains("stat-number")) {
+                const text = entry.target.textContent;
+                const number = parseInt(text.replace(/[^0-9]/g, ""));
+                animateCounter(entry.target, number);
+              }
+
+              // Stagger animation for interest cards
+              if (entry.target.classList.contains("interest-card")) {
+                const cards =
+                  entry.target.parentElement.querySelectorAll(".interest-card");
+                cards.forEach((card, index) => {
+                  setTimeout(() => {
+                    card.style.transform = "translateY(0)";
+                    card.style.opacity = "1";
+                  }, index * 150);
+                });
+              }
+            }
+          });
+        }, observerOptions);
+
+        // Observe elements for animations
+        const animatedElements = document.querySelectorAll(
+          ".stat-number, .interest-card, .action-btn, .quick-link"
+        );
+        animatedElements.forEach((el) => {
+          // Set initial state
+          if (el.classList.contains("interest-card")) {
+            el.style.transform = "translateY(30px)";
+            el.style.opacity = "0";
+            el.style.transition = "all 0.6s ease";
+          }
+          observer.observe(el);
+        });
+
+        // Enhanced button hover effects
+        const actionButtons = document.querySelectorAll(".action-btn");
+        actionButtons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-3px) scale(1.05)";
+
+            // Add ripple effect
+            const ripple = document.createElement("div");
+            ripple.style.position = "absolute";
+            ripple.style.width = "100%";
+            ripple.style.height = "100%";
+            ripple.style.background = "rgba(255, 255, 255, 0.1)";
+            ripple.style.borderRadius = "50px";
+            ripple.style.top = "0";
+            ripple.style.left = "0";
+            ripple.style.animation = "ripple 0.6s ease-out";
+            ripple.style.pointerEvents = "none";
+
+            this.style.position = "relative";
+            this.appendChild(ripple);
+
+            setTimeout(() => {
+              if (ripple.parentNode) {
+                ripple.parentNode.removeChild(ripple);
+              }
+            }, 600);
+          });
+
+          button.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0) scale(1)";
+          });
+        });
+
+        // Quick links hover effect
+        const quickLinks = document.querySelectorAll(".quick-link");
+        quickLinks.forEach((link) => {
+          link.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-2px) scale(1.05)";
+          });
+
+          link.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0) scale(1)";
+          });
+        });
+
+        // Parallax effect for floating shapes
+        window.addEventListener("scroll", function () {
+          const scrolled = window.pageYOffset;
+          const aboutSection = document.getElementById("about");
+
+          if (aboutSection) {
+            const shapes = aboutSection.querySelectorAll(
+              ".floating-shapes div"
+            );
+            shapes.forEach((shape, index) => {
+              const speed = 0.1 + index * 0.05;
+              shape.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+          }
+        });
+
+        // Add CSS animation for ripple effect
+        const style = document.createElement("style");
+        style.textContent = `
+          @keyframes ripple {
+            0% {
+              transform: scale(0);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1);
+              opacity: 0;
+            }
+          }
+          
+          .animate-in {
+            animation: slideInUp 0.8s ease-out;
+          }
+          
+          @keyframes slideInUp {
+            from {
+              transform: translateY(30px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+
+        // Auto-cycle through story tabs (optional)
+        let currentTabIndex = 0;
+        const tabCycleInterval = 10000; // 10 seconds
+
+        setInterval(() => {
+          if (navTabs.length > 0) {
+            navTabs[currentTabIndex].click();
+            currentTabIndex = (currentTabIndex + 1) % navTabs.length;
+          }
+        }, tabCycleInterval);
+      });
+    </script>
   </body>
 </html>
