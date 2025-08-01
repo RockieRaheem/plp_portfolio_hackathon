@@ -2406,7 +2406,8 @@ body::after {
 }
 
 @keyframes contactTwinkle {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(1);
   }
@@ -2687,8 +2688,8 @@ body::after {
 
 /* Contact Form Panel */
 .contact-form-panel {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(46, 204, 64, 0.15);
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.15);
   border-radius: 20px;
   padding: 3rem;
   backdrop-filter: blur(10px);
@@ -2699,9 +2700,9 @@ body::after {
 
 .contact-form-panel:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 184, 148, 0.25);
-  border-color: rgba(0, 184, 148, 0.3);
-  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 40px rgba(100, 255, 218, 0.25);
+  border-color: rgba(100, 255, 218, 0.3);
+  background: rgba(17, 34, 64, 0.9);
 }
 
 .contact-form-panel::before {
@@ -2711,7 +2712,7 @@ body::after {
   right: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #00b894, transparent);
+  background: linear-gradient(90deg, transparent, #64ffda, transparent);
 }
 
 .form-header {
@@ -2721,13 +2722,13 @@ body::after {
 .form-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #2ecc40;
+  color: #64ffda;
   margin-bottom: 1rem;
 }
 
 .form-description {
   font-size: 1.1rem;
-  color: #a0d4b5;
+  color: #8892b0;
   line-height: 1.6;
 }
 
@@ -2736,15 +2737,16 @@ body::after {
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 16px;
-  background: rgba(46, 204, 64, 0.02);
-  border: 1px solid rgba(46, 204, 64, 0.1);
+  background: rgba(100, 255, 218, 0.05);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .contact-form:focus-within {
-  background: rgba(46, 204, 64, 0.05);
-  border-color: rgba(46, 204, 64, 0.2);
-  box-shadow: 0 4px 20px rgba(46, 204, 64, 0.15);
+  background: rgba(100, 255, 218, 0.08);
+  border-color: rgba(100, 255, 218, 0.3);
+  box-shadow: 0 8px 32px rgba(100, 255, 218, 0.2);
 }
 
 .form-row {
@@ -2765,17 +2767,17 @@ body::after {
 }
 
 .form-group:focus-within .form-label {
-  color: #2ecc40;
-  text-shadow: 0 1px 6px rgba(46, 204, 64, 0.5);
+  color: #64ffda;
+  text-shadow: 0 1px 6px rgba(100, 255, 218, 0.5);
 }
 
 .form-label {
   display: block;
   font-size: 1rem;
   font-weight: 600;
-  color: #e0f7ea;
+  color: #ccd6f6;
   margin-bottom: 0.5rem;
-  text-shadow: 0 1px 3px rgba(46, 204, 64, 0.3);
+  text-shadow: 0 1px 3px rgba(100, 255, 218, 0.3);
   transition: color 0.3s ease;
 }
 
@@ -2784,40 +2786,42 @@ body::after {
 .form-textarea {
   width: 100%;
   padding: 1rem 1.25rem;
-  background: rgba(46, 204, 64, 0.08);
-  border: 2px solid rgba(46, 204, 64, 0.2);
+  background: rgba(16, 34, 64, 0.6);
+  border: 2px solid rgba(100, 255, 218, 0.3);
   border-radius: 12px;
-  color: #f0f9f4;
+  color: #ccd6f6;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   position: relative;
 }
 
 .form-input:hover,
 .form-select:hover,
 .form-textarea:hover {
-  background: rgba(46, 204, 64, 0.12);
-  border-color: rgba(46, 204, 64, 0.3);
-  box-shadow: 0 2px 8px rgba(46, 204, 64, 0.15);
+  background: rgba(16, 34, 64, 0.8);
+  border-color: rgba(100, 255, 218, 0.5);
+  box-shadow: 0 4px 20px rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
 }
 
 .form-input:focus,
 .form-select:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #2ecc40;
-  box-shadow: 0 0 0 3px rgba(46, 204, 64, 0.2),
-    0 4px 12px rgba(46, 204, 64, 0.25);
-  background: rgba(46, 204, 64, 0.15);
+  border-color: #64ffda;
+  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.3),
+    0 8px 25px rgba(100, 255, 218, 0.4);
+  background: rgba(16, 34, 64, 0.9);
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: #a0d4b5;
-  opacity: 0.8;
+  color: #8892b0;
+  opacity: 0.7;
 }
 
 .form-select {
@@ -2852,27 +2856,29 @@ body::after {
 }
 
 .contact-btn.primary {
-  background: linear-gradient(135deg, #2ecc40, #00b894);
-  color: #101820;
+  background: linear-gradient(135deg, #64ffda, #4ecdc4);
+  color: #0a1628;
   flex: 1;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(10, 22, 40, 0.3);
 }
 
 .contact-btn.primary:hover {
-  background: linear-gradient(135deg, #00b894, #2ecc40);
+  background: linear-gradient(135deg, #4ecdc4, #64ffda);
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(46, 204, 64, 0.4);
+  box-shadow: 0 12px 35px rgba(100, 255, 218, 0.4);
 }
 
 .contact-btn.secondary {
-  background: rgba(46, 204, 64, 0.12);
-  border: 2px solid rgba(46, 204, 64, 0.3);
-  color: #e0f7ea;
+  background: rgba(100, 255, 218, 0.1);
+  border: 2px solid rgba(100, 255, 218, 0.3);
+  color: #64ffda;
 }
 
 .contact-btn.secondary:hover {
-  background: rgba(46, 204, 64, 0.2);
-  border-color: #2ecc40;
-  box-shadow: 0 6px 20px rgba(46, 204, 64, 0.25);
+  background: rgba(100, 255, 218, 0.2);
+  border-color: #64ffda;
+  box-shadow: 0 6px 20px rgba(100, 255, 218, 0.25);
   transform: translateY(-2px);
 }
 
