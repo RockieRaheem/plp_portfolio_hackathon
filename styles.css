@@ -2538,21 +2538,30 @@ body::after {
 
 /* Contact Info Panel */
 .contact-info-panel {
-  background: rgba(17, 34, 64, 0.7);
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 0.9) 0%,
+    rgba(16, 24, 32, 0.8) 100%
+  );
+  border: 1px solid rgba(127, 255, 166, 0.2);
   border-radius: 20px;
   padding: 3rem;
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .contact-info-panel:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(100, 255, 218, 0.25);
-  border-color: rgba(100, 255, 218, 0.3);
-  background: rgba(17, 34, 64, 0.9);
+  box-shadow: 0 12px 40px rgba(127, 255, 166, 0.25);
+  border-color: rgba(127, 255, 166, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 0.95) 0%,
+    rgba(16, 24, 32, 0.9) 100%
+  );
 }
 
 .contact-info-panel::before {
@@ -2729,21 +2738,30 @@ body::after {
 
 /* Contact Form Panel */
 .contact-form-panel {
-  background: rgba(17, 34, 64, 0.7);
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 0.9) 0%,
+    rgba(16, 24, 32, 0.8) 100%
+  );
+  border: 1px solid rgba(127, 255, 166, 0.2);
   border-radius: 20px;
   padding: 3rem;
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form-panel:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(100, 255, 218, 0.25);
-  border-color: rgba(100, 255, 218, 0.3);
-  background: rgba(17, 34, 64, 0.9);
+  box-shadow: 0 12px 40px rgba(127, 255, 166, 0.25);
+  border-color: rgba(127, 255, 166, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 0.95) 0%,
+    rgba(16, 24, 32, 0.9) 100%
+  );
 }
 
 .contact-form-panel::before {
@@ -2778,16 +2796,16 @@ body::after {
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 16px;
-  background: rgba(100, 255, 218, 0.05);
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  background: rgba(46, 204, 64, 0.05);
+  border: 1px solid rgba(127, 255, 166, 0.2);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
 .contact-form:focus-within {
-  background: rgba(100, 255, 218, 0.08);
-  border-color: rgba(100, 255, 218, 0.3);
-  box-shadow: 0 8px 32px rgba(100, 255, 218, 0.2);
+  background: rgba(46, 204, 64, 0.08);
+  border-color: rgba(127, 255, 166, 0.3);
+  box-shadow: 0 8px 32px rgba(46, 204, 64, 0.2);
 }
 
 .form-row {
@@ -2827,8 +2845,8 @@ body::after {
 .form-textarea {
   width: 100%;
   padding: 1rem 1.25rem;
-  background: rgba(16, 34, 64, 0.6);
-  border: 2px solid rgba(100, 255, 218, 0.3);
+  background: rgba(26, 42, 47, 0.6);
+  border: 2px solid rgba(127, 255, 166, 0.3);
   border-radius: 12px;
   color: #ccd6f6;
   font-size: 1rem;
