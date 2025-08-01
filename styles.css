@@ -3105,13 +3105,13 @@ body::after {
   margin-top: 2rem;
   text-align: center;
   position: relative;
-  background: rgba(16, 24, 32, 0.85);
-  border: 1px solid rgba(127, 255, 166, 0.2);
+  background: rgba(46, 204, 64, 0.1);
+  border: 1px solid rgba(46, 204, 64, 0.2);
   border-radius: 15px;
   padding: 2rem 1.5rem;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(46, 204, 64, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .footer-social::before {
@@ -3120,81 +3120,41 @@ body::after {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: radial-gradient(
-      1px 1px at 20% 20%,
-      rgba(127, 255, 166, 0.4),
-      transparent
-    ),
-    radial-gradient(1px 1px at 40% 60%, rgba(127, 255, 166, 0.3), transparent),
-    radial-gradient(1px 1px at 80% 40%, rgba(127, 255, 166, 0.5), transparent),
-    radial-gradient(1px 1px at 60% 80%, rgba(127, 255, 166, 0.2), transparent);
-  background-size: 50px 50px;
-  animation: starTwinkle 8s linear infinite;
-  pointer-events: none;
-  opacity: 0.6;
+  height: 2px;
+  background: linear-gradient(90deg, #2ecc40, #27ae60);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
 }
 
-.footer-social::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(
-    from 0deg at 50% 50%,
-    transparent 0deg,
-    rgba(46, 204, 64, 0.05) 45deg,
-    transparent 90deg,
-    rgba(39, 174, 96, 0.08) 135deg,
-    transparent 180deg,
-    rgba(46, 204, 64, 0.05) 225deg,
-    transparent 270deg,
-    rgba(39, 174, 96, 0.08) 315deg,
-    transparent 360deg
-  );
-  animation: cosmicRotation 20s linear infinite;
-  pointer-events: none;
-  opacity: 0.3;
+.footer-social:hover::before {
+  transform: scaleX(1);
 }
 
-@keyframes starTwinkle {
-  0%,
-  100% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes cosmicRotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-social:hover {
+  background: rgba(46, 204, 64, 0.2);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(46, 204, 64, 0.3);
+  border-color: rgba(46, 204, 64, 0.4);
 }
 
 .footer-social h4 {
   position: relative;
   z-index: 2;
-  color: #7fffa6;
+  color: #2ecc40;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease;
-  text-shadow: 0 0 20px rgba(127, 255, 166, 0.5);
+  text-shadow: 0 2px 4px rgba(46, 204, 64, 0.3);
 }
 
 .footer-social:hover h4 {
-  color: #ffffff;
+  color: #27ae60;
   transform: translateY(-2px);
-  text-shadow: 0 0 30px rgba(127, 255, 166, 0.8);
+  text-shadow: 0 3px 6px rgba(46, 204, 64, 0.5);
 }
 
 .social-links {
@@ -3345,6 +3305,37 @@ body::after {
     rgba(37, 211, 102, 0.3) 100%
   );
   color: #ffffff;
+}
+
+/* Connection Motto Styling */
+.connection-motto {
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.connection-motto p {
+  color: #b2f7cc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.footer-social:hover .connection-motto p {
+  color: #e0f2e9;
+  transform: translateY(-1px);
+}
+
+.motto-icon {
+  color: #2ecc40;
+  margin: 0 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social:hover .motto-icon {
+  color: #27ae60;
+  transform: scale(1.1);
 }
 
 /* Footer Bottom Section */
