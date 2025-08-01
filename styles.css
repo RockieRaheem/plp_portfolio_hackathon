@@ -2501,8 +2501,8 @@ body::after {
 
 /* Contact Info Panel */
 .contact-info-panel {
-  background: rgba(46, 204, 64, 0.05);
-  border: 1px solid rgba(46, 204, 64, 0.15);
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.15);
   border-radius: 20px;
   padding: 3rem;
   backdrop-filter: blur(10px);
@@ -2513,9 +2513,9 @@ body::after {
 
 .contact-info-panel:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(46, 204, 64, 0.25);
-  border-color: rgba(46, 204, 64, 0.3);
-  background: rgba(46, 204, 64, 0.08);
+  box-shadow: 0 12px 40px rgba(100, 255, 218, 0.25);
+  border-color: rgba(100, 255, 218, 0.3);
+  background: rgba(17, 34, 64, 0.9);
 }
 
 .contact-info-panel::before {
@@ -2525,7 +2525,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #2ecc40, transparent);
+  background: linear-gradient(90deg, transparent, #64ffda, transparent);
 }
 
 .info-header {
@@ -2535,13 +2535,13 @@ body::after {
 .info-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #2ecc40;
+  color: #64ffda;
   margin-bottom: 1rem;
 }
 
 .info-description {
   font-size: 1.1rem;
-  color: #a0d4b5;
+  color: #8892b0;
   line-height: 1.6;
 }
 
@@ -2556,30 +2556,32 @@ body::after {
   gap: 1.5rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(46, 204, 64, 0.1);
+  background: rgba(16, 34, 64, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   border-radius: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
+  backdrop-filter: blur(5px);
 }
 
 .contact-method:hover {
-  background: rgba(46, 204, 64, 0.08);
-  border-color: rgba(46, 204, 64, 0.3);
+  background: rgba(16, 34, 64, 0.6);
+  border-color: rgba(100, 255, 218, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(46, 204, 64, 0.15);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.25);
 }
 
 .method-icon {
   flex-shrink: 0;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #2ecc40, #00b894);
+  background: linear-gradient(135deg, #64ffda, #4ecdc4);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
 }
 
 .method-content {
@@ -2589,26 +2591,26 @@ body::after {
 .method-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #b2f7cc;
+  color: #ccd6f6;
   margin-bottom: 0.5rem;
 }
 
 .method-value {
   font-size: 1rem;
-  color: #e0f2e9;
+  color: #a8b2d1;
   margin-bottom: 0.25rem;
 }
 
 .method-note {
   font-size: 0.9rem;
-  color: #7aa98b;
+  color: #8892b0;
 }
 
 .method-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #2ecc40;
+  color: #64ffda;
   text-decoration: none;
   font-weight: 500;
   margin-top: 0.5rem;
@@ -2616,7 +2618,7 @@ body::after {
 }
 
 .method-link:hover {
-  color: #00b894;
+  color: #4ecdc4;
 }
 
 /* Social Connect */
@@ -2627,7 +2629,7 @@ body::after {
 .social-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #b2f7cc;
+  color: #ccd6f6;
   margin-bottom: 1rem;
 }
 
@@ -2641,19 +2643,20 @@ body::after {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: rgba(46, 204, 64, 0.1);
-  border: 1px solid rgba(46, 204, 64, 0.2);
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   border-radius: 25px;
-  color: #b2f7cc;
+  color: #ccd6f6;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background: rgba(46, 204, 64, 0.2);
+  background: rgba(100, 255, 218, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(46, 204, 64, 0.2);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
+  border-color: #64ffda;
 }
 
 .social-icon {
@@ -2664,7 +2667,7 @@ body::after {
 .response-info {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(46, 204, 64, 0.15);
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
 }
 
 .response-indicator {
@@ -2676,13 +2679,14 @@ body::after {
 .status-dot {
   width: 10px;
   height: 10px;
-  background: #2ecc40;
+  background: #64ffda;
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
 }
 
 .status-text {
-  color: #a0d4b5;
+  color: #8892b0;
   font-size: 0.95rem;
 }
 
@@ -2889,14 +2893,14 @@ body::after {
   gap: 1rem;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(46, 204, 64, 0.15);
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
 }
 
 .feature-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a0d4b5;
+  color: #8892b0;
   font-size: 0.9rem;
 }
 
