@@ -717,41 +717,248 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+      <!-- Animated Background Elements -->
+      <div class="contact-bg-stars">
+        <div class="contact-star"></div>
+        <div class="contact-star"></div>
+        <div class="contact-star"></div>
+        <div class="contact-star"></div>
+        <div class="contact-star"></div>
+      </div>
+
       <div class="contact-container">
-        <h2>Contact</h2>
-        <form class="contact-form" autocomplete="off">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Your Name"
-            />
+        <!-- Section Header -->
+        <div class="contact-header">
+          <div class="header-content">
+            <h2 class="contact-title">Let's Create Something Amazing</h2>
+            <p class="contact-subtitle">
+              Ready to bring your ideas to life? I'm excited to hear about your
+              project and explore how we can work together to build innovative
+              solutions.
+            </p>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="your@email.com"
-            />
+          <div class="header-decoration">
+            <div class="decoration-orb"></div>
+            <div class="decoration-line"></div>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              placeholder="Type your message..."
-            ></textarea>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="contact-grid">
+          <!-- Contact Information Panel -->
+          <div class="contact-info-panel">
+            <div class="info-content">
+              <div class="info-header">
+                <h3 class="info-title">Get In Touch</h3>
+                <p class="info-description">
+                  I'm always open to discussing new opportunities, creative
+                  projects, or just having a friendly chat about technology and
+                  innovation.
+                </p>
+              </div>
+
+              <!-- Contact Methods -->
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <span class="icon">📧</span>
+                  </div>
+                  <div class="method-content">
+                    <h4 class="method-title">Email</h4>
+                    <p class="method-value">kamwangaraheem@gmail.com</p>
+                    <span class="method-note"
+                      >Preferred for detailed discussions</span
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <span class="icon">📱</span>
+                  </div>
+                  <div class="method-content">
+                    <h4 class="method-title">Phone</h4>
+                    <p class="method-value">+256 704 057 370</p>
+                    <span class="method-note">Available 9 AM - 7 PM EAT</span>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <span class="icon">📍</span>
+                  </div>
+                  <div class="method-content">
+                    <h4 class="method-title">Location</h4>
+                    <p class="method-value">Kampala, Uganda</p>
+                    <span class="method-note"
+                      >Open to remote collaboration</span
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <span class="icon">💬</span>
+                  </div>
+                  <div class="method-content">
+                    <h4 class="method-title">WhatsApp</h4>
+                    <p class="method-value">Quick Messages</p>
+                    <a
+                      href="https://wa.me/+256704057370"
+                      target="_blank"
+                      class="method-link"
+                    >
+                      Start Chat
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Connect -->
+              <div class="social-connect">
+                <h4 class="social-title">Connect With Me</h4>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/RockieRaheem"
+                    target="_blank"
+                    class="social-link github"
+                  >
+                    <span class="social-icon">🐙</span>
+                    <span class="social-label">GitHub</span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/kamwanga-raheem-b1b055271"
+                    target="_blank"
+                    class="social-link linkedin"
+                  >
+                    <span class="social-icon">💼</span>
+                    <span class="social-label">LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://twitter.com/kamwanga_rahiim"
+                    target="_blank"
+                    class="social-link twitter"
+                  >
+                    <span class="social-icon">🐦</span>
+                    <span class="social-label">Twitter</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Response Time -->
+              <div class="response-info">
+                <div class="response-indicator">
+                  <div class="status-dot active"></div>
+                  <span class="status-text"
+                    >Usually responds within 24 hours</span
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="submit" class="contact-btn">Send Message</button>
-        </form>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel">
+            <div class="form-content">
+              <div class="form-header">
+                <h3 class="form-title">Send Me a Message</h3>
+                <p class="form-description">
+                  Tell me about your project, and I'll get back to you as soon
+                  as possible.
+                </p>
+              </div>
+
+              <form class="contact-form" autocomplete="off">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="John Doe"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="john@example.com"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    required
+                    class="form-select"
+                  >
+                    <option value="">Choose a topic</option>
+                    <option value="project">New Project Inquiry</option>
+                    <option value="collaboration">
+                      Collaboration Opportunity
+                    </option>
+                    <option value="consultation">Technical Consultation</option>
+                    <option value="freelance">Freelance Work</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
+                    class="form-textarea"
+                  ></textarea>
+                  <div class="character-count">
+                    <span class="count">0</span> / 500 characters
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="contact-btn primary">
+                    <span class="btn-icon">🚀</span>
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading">Sending...</span>
+                  </button>
+                  <button type="reset" class="contact-btn secondary">
+                    <span class="btn-icon">🔄</span>
+                    <span class="btn-text">Clear Form</span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Form Features -->
+              <div class="form-features">
+                <div class="feature-item">
+                  <span class="feature-icon">🔒</span>
+                  <span class="feature-text">Your information is secure</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">⚡</span>
+                  <span class="feature-text">Fast response guaranteed</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🎯</span>
+                  <span class="feature-text">Tailored solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1004,5 +1211,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="contact.js"></script>
   </body>
 </html>
