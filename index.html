@@ -868,7 +868,12 @@
                 </p>
               </div>
 
-              <form class="contact-form" autocomplete="off">
+              <form
+                class="contact-form"
+                method="POST"
+                action="#contact"
+                autocomplete="off"
+              >
                 <div class="form-row">
                   <div class="form-group">
                     <label for="name" class="form-label">Full Name</label>
@@ -923,16 +928,12 @@
                     placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
                     class="form-textarea"
                   ></textarea>
-                  <div class="character-count">
-                    <span class="count">0</span> / 500 characters
-                  </div>
                 </div>
 
                 <div class="form-actions">
                   <button type="submit" class="contact-btn primary">
                     <span class="btn-icon">🚀</span>
                     <span class="btn-text">Send Message</span>
-                    <span class="btn-loading">Sending...</span>
                   </button>
                   <button type="reset" class="contact-btn secondary">
                     <span class="btn-icon">🔄</span>
@@ -1211,8 +1212,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="contact.js"></script>
   </body>
 </html>
