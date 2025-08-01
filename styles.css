@@ -2602,19 +2602,28 @@ body::after {
   gap: 1.5rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  background: rgba(16, 34, 64, 0.3);
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 0.9) 0%,
+    rgba(16, 24, 32, 0.8) 100%
+  );
+  border: 1px solid rgba(127, 255, 166, 0.2);
   border-radius: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
   backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-method:hover {
-  background: rgba(16, 34, 64, 0.6);
-  border-color: rgba(100, 255, 218, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 42, 47, 1) 0%,
+    rgba(16, 24, 32, 0.95) 100%
+  );
+  border-color: rgba(127, 255, 166, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.25);
+  box-shadow: 0 8px 25px rgba(46, 204, 64, 0.25);
 }
 
 .method-icon {
@@ -2637,19 +2646,19 @@ body::after {
 .method-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ccd6f6;
+  color: #b2f7cc;
   margin-bottom: 0.5rem;
 }
 
 .method-value {
   font-size: 1rem;
-  color: #a8b2d1;
+  color: #a0d4b5;
   margin-bottom: 0.25rem;
 }
 
 .method-note {
   font-size: 0.9rem;
-  color: #8892b0;
+  color: #a0d4b5;
 }
 
 .method-link {
@@ -2675,7 +2684,7 @@ body::after {
 .social-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ccd6f6;
+  color: #b2f7cc;
   margin-bottom: 1rem;
 }
 
@@ -2834,9 +2843,9 @@ body::after {
   display: block;
   font-size: 1rem;
   font-weight: 600;
-  color: #ccd6f6;
+  color: #b2f7cc;
   margin-bottom: 0.5rem;
-  text-shadow: 0 1px 3px rgba(100, 255, 218, 0.3);
+  text-shadow: 0 1px 3px rgba(46, 204, 64, 0.3);
   transition: color 0.3s ease;
 }
 
@@ -2848,7 +2857,7 @@ body::after {
   background: rgba(26, 42, 47, 0.6);
   border: 2px solid rgba(127, 255, 166, 0.3);
   border-radius: 12px;
-  color: #ccd6f6;
+  color: #b2f7cc;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -2873,13 +2882,13 @@ body::after {
   box-shadow: 0 0 0 3px rgba(46, 204, 64, 0.3),
     0 8px 25px rgba(46, 204, 64, 0.4);
   background: rgba(22, 38, 26, 0.9);
-  color: #ffffff;
+  color: #b2f7cc;
   transform: translateY(-2px);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: #8892b0;
+  color: #a0d4b5;
   opacity: 0.7;
 }
 
