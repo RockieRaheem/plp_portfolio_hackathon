@@ -774,12 +774,158 @@ body::after {
   flex: 1;
 }
 .about-content h2 {
-  color: #2ecc40;
+  color: #7fffa6;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(127, 255, 166, 0.4);
 }
 .about-content p {
   color: #e0f2e9;
   font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* ====== Interests Section ====== */
+.interests-section {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: rgba(16, 24, 32, 0.3);
+  border-radius: 15px;
+  border: 1px solid rgba(127, 255, 166, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.interests-section h3 {
+  color: #7fffa6;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(127, 255, 166, 0.3);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: rgba(127, 255, 166, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(127, 255, 166, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.interest-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(127, 255, 166, 0.2);
+  background: rgba(127, 255, 166, 0.1);
+}
+
+.interest-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(127, 255, 166, 0.5));
+}
+
+.interest-content h4 {
+  color: #7fffa6;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.interest-content p {
+  color: #b2f7cc;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ====== CV Download Section ====== */
+.cv-download-section {
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.1) 0%,
+    rgba(16, 24, 32, 0.2) 100%
+  );
+  border-radius: 20px;
+  border: 2px solid rgba(127, 255, 166, 0.3);
+  text-align: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(127, 255, 166, 0.1);
+}
+
+.cv-download-section h3 {
+  color: #7fffa6;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-shadow: 0 0 15px rgba(127, 255, 166, 0.4);
+}
+
+.cv-download-section p {
+  color: #e0f2e9;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 2.5rem;
+  background: linear-gradient(135deg, #7fffa6 0%, #2ecc40 100%);
+  color: #101820;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(127, 255, 166, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.cv-download-btn:hover,
+.cv-download-btn:focus {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(127, 255, 166, 0.5);
+  background: linear-gradient(135deg, #2ecc40 0%, #7fffa6 100%);
+}
+
+.cv-icon {
+  font-size: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.cv-text {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.cv-size {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  background: rgba(16, 24, 32, 0.2);
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 /* ====== Education Section ====== */
@@ -1286,6 +1432,16 @@ body::after {
     animation-duration: 40s;
     opacity: 0.2;
   }
+  .interests-section {
+    padding: 1.5rem;
+  }
+  .interests-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+  .cv-download-section {
+    padding: 2rem;
+  }
   .about-container,
   .certificates-row {
     flex-direction: column;
@@ -1351,6 +1507,27 @@ body::after {
     font-size: 1.2rem;
   }
   .intro-text p {
+    font-size: 1rem;
+  }
+  .interests-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .interest-item {
+    padding: 1rem;
+  }
+  .interest-icon {
+    font-size: 2rem;
+  }
+  .cv-download-section {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  .cv-download-section h3 {
+    font-size: 1.4rem;
+  }
+  .cv-download-btn {
+    padding: 1rem 2rem;
     font-size: 1rem;
   }
   .about-img {
