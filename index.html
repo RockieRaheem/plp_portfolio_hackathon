@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Professional Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
       <div class="navbar-logo">
@@ -33,7 +36,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <!-- Home Section -->
     <header id="home">
       <div class="stars-bg">
@@ -48,7 +50,6 @@
         <div class="star" id="star9"></div>
         <div class="star" id="star10"></div>
       </div>
-
       <!-- Tech Stack Constellations -->
       <div class="tech-constellation leaf-constellation">
         <div class="tech-star" data-tech="Python"></div>
@@ -64,7 +65,6 @@
         <div class="tech-star" data-tech="Docker"></div>
         <div class="tech-star" data-tech="AWS"></div>
       </div>
-
       <div class="tech-constellation tree-constellation">
         <div class="tech-star" data-tech="Next.js"></div>
         <div class="tech-star" data-tech="TypeScript"></div>
@@ -80,18 +80,15 @@
         <div class="tech-star" data-tech="Redis"></div>
         <div class="tech-star" data-tech="Kubernetes"></div>
       </div>
-
       <div class="intro-text">
         <h1>Kamwanga Raheem</h1>
         <h2>Software Engineering Student</h2>
         <p>Solving real-world problems through sustainable technology</p>
       </div>
-
       <!-- Floating Plant Decorations -->
       <div class="animated-plant plant-left">🌱</div>
       <div class="animated-plant plant-right">🌿</div>
     </header>
-
     <!-- About Section - Completely Redesigned -->
     <section id="about" class="about-section">
       <div class="about-container">
@@ -104,7 +101,6 @@
             <div class="particle" data-particle="🌿"></div>
             <div class="particle" data-particle="🚀"></div>
           </div>
-
           <div class="header-content">
             <span class="section-badge">🌱 Get to Know Me</span>
             <h2 class="main-title">
@@ -117,7 +113,6 @@
             </p>
           </div>
         </div>
-
         <!-- Hero Introduction -->
         <div class="about-hero">
           <div class="hero-visual">
@@ -139,7 +134,6 @@
               <span class="badge-icon">🚀</span>
               <span class="badge-text">Eco-Tech Innovator</span>
             </div>
-
             <!-- Dynamic Title with Typewriter Effect -->
             <div class="title-container">
               <h3 class="hero-intro-title">
@@ -149,7 +143,6 @@
                   <div class="title-cursor"></div>
                 </span>
               </h3>
-
               <!-- Title Decorations -->
               <div class="title-decorations">
                 <div class="decoration-line"></div>
@@ -160,7 +153,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Enhanced Mission Statement -->
             <div class="mission-container">
               <div class="mission-icon">💡</div>
@@ -175,7 +167,6 @@
                 >.
               </p>
             </div>
-
             <!-- Action Cards -->
             <div class="hero-actions">
               <div class="action-card primary-action">
@@ -185,7 +176,6 @@
                   <p>Building eco-conscious solutions</p>
                 </div>
               </div>
-
               <div class="action-card secondary-action">
                 <div class="action-icon">⚡</div>
                 <div class="action-content">
@@ -194,7 +184,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Interactive Stats -->
             <div class="hero-stats">
               <div class="stat-item">
@@ -214,7 +203,6 @@
             </div>
           </div>
         </div>
-
         <!-- Main About Content -->
         <div class="about-main">
           <!-- Left Column - Personal Info -->
@@ -223,15 +211,12 @@
               <!-- Profile Header with Dynamic Avatar -->
               <div class="profile-header">
                 <div class="avatar-container">
-                  <div class="avatar-ring"></div>
-                  <div class="avatar-content">
-                    <span class="avatar-icon">👨‍💻</span>
-                    <div class="avatar-status">
-                      <div class="status-dot"></div>
-                    </div>
-                  </div>
+                  <img
+                    src="Images/profileImage.jpg"
+                    alt="Raheem Kamwanga"
+                    class="profile-avatar"
+                  />
                 </div>
-
                 <div class="profile-info">
                   <h3 class="profile-name">
                     <span class="name-text">Raheem Kamwanga</span>
@@ -245,10 +230,8 @@
                   </div>
                 </div>
               </div>
-
               <!-- Enhanced Role Description -->
               <div class="role-showcase">
-                <div class="role-icon">🚀</div>
                 <p class="role-description">
                   <span class="role-highlight">Full Stack Developer</span> &
                   <span class="role-highlight"
@@ -265,7 +248,6 @@
                   <span class="skill-chip">Green Tech</span>
                 </div>
               </div>
-
               <!-- Interactive Quick Stats -->
               <div class="quick-stats">
                 <div class="stat-group age-stat">
@@ -276,7 +258,6 @@
                   </div>
                   <div class="stat-pulse"></div>
                 </div>
-
                 <div class="stat-group experience-stat">
                   <div class="stat-bg-icon">⏱️</div>
                   <div class="stat-content">
@@ -285,7 +266,6 @@
                   </div>
                   <div class="stat-pulse"></div>
                 </div>
-
                 <div class="stat-group projects-stat">
                   <div class="stat-bg-icon">🏆</div>
                   <div class="stat-content">
@@ -295,7 +275,6 @@
                   <div class="stat-pulse"></div>
                 </div>
               </div>
-
               <!-- Premium Contact Actions -->
               <div class="contact-actions">
                 <a href="#contact" class="action-btn primary">
@@ -307,7 +286,6 @@
                   </div>
                   <div class="btn-ripple-effect"></div>
                 </a>
-
                 <a
                   href="CV_Kamwanga_Raheem.pdf"
                   class="action-btn secondary"
@@ -317,33 +295,12 @@
                   <div class="btn-content">
                     <span class="btn-icon">📄</span>
                     <span class="btn-text">Download CV</span>
-                    <div class="btn-sparkle">📋</div>
                   </div>
                   <div class="btn-ripple-effect"></div>
                 </a>
               </div>
-
-              <!-- Achievement Badges -->
-              <div class="achievement-section">
-                <h4 class="achievement-title">Achievements</h4>
-                <div class="badges-container">
-                  <div class="achievement-badge eco-badge">
-                    <span class="badge-icon">🌱</span>
-                    <span class="badge-text">Eco Innovator</span>
-                  </div>
-                  <div class="achievement-badge code-badge">
-                    <span class="badge-icon">�</span>
-                    <span class="badge-text">Code Craftsman</span>
-                  </div>
-                  <div class="achievement-badge student-badge">
-                    <span class="badge-icon">🎓</span>
-                    <span class="badge-text">UTAMU Student</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-
           <!-- Right Column - Story & Skills -->
           <div class="story-column">
             <!-- Enhanced Journey Card -->
@@ -360,7 +317,6 @@
                   <div class="timeline-line"></div>
                 </div>
               </div>
-
               <div class="journey-content">
                 <div class="journey-milestone">
                   <div class="milestone-icon">🎓</div>
@@ -375,7 +331,6 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="journey-milestone">
                   <div class="milestone-icon">💻</div>
                   <div class="milestone-content">
@@ -388,7 +343,6 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="tech-stack-preview">
                   <span class="tech-item react">React</span>
                   <span class="tech-item nextjs">Next.js</span>
@@ -397,7 +351,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Revolutionary Core Values -->
             <div class="values-card">
               <div class="card-header">
@@ -407,7 +360,6 @@
                 <h3>Core Values</h3>
                 <div class="values-subtitle">What drives my passion</div>
               </div>
-
               <div class="values-grid">
                 <div class="value-item sustainability-item">
                   <div class="value-background"></div>
@@ -416,7 +368,6 @@
                   <p>Building eco-conscious software solutions</p>
                   <div class="value-indicator"></div>
                 </div>
-
                 <div class="value-item performance-item">
                   <div class="value-background"></div>
                   <div class="value-icon">⚡</div>
@@ -424,7 +375,6 @@
                   <p>Optimizing for speed and efficiency</p>
                   <div class="value-indicator"></div>
                 </div>
-
                 <div class="value-item innovation-item">
                   <div class="value-background"></div>
                   <div class="value-icon">🎯</div>
@@ -432,7 +382,6 @@
                   <p>Pushing boundaries with creative solutions</p>
                   <div class="value-indicator"></div>
                 </div>
-
                 <div class="value-item collaboration-item">
                   <div class="value-background"></div>
                   <div class="value-icon">🤝</div>
@@ -442,7 +391,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Dynamic Lifestyle Card -->
             <div class="lifestyle-card">
               <div class="card-header">
@@ -457,7 +405,6 @@
                 <h3>Beyond Coding</h3>
                 <div class="lifestyle-motto">Balance creates brilliance</div>
               </div>
-
               <div class="lifestyle-content">
                 <div class="lifestyle-intro-card">
                   <div class="intro-icon">💡</div>
@@ -466,7 +413,6 @@
                     creativity and problem-solving abilities.
                   </p>
                 </div>
-
                 <div class="interests-showcase">
                   <div class="interest-bubble boxing-interest">
                     <div class="bubble-glow"></div>
@@ -476,7 +422,6 @@
                       <div class="level-bar boxing-level"></div>
                     </div>
                   </div>
-
                   <div class="interest-bubble soccer-interest">
                     <div class="bubble-glow"></div>
                     <span class="interest-emoji">⚽</span>
@@ -485,7 +430,6 @@
                       <div class="level-bar soccer-level"></div>
                     </div>
                   </div>
-
                   <div class="interest-bubble music-interest">
                     <div class="bubble-glow"></div>
                     <span class="interest-emoji">🎵</span>
@@ -495,7 +439,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="lifestyle-stats">
                   <div class="lifestyle-stat">
                     <span class="stat-icon">🏃‍♂️</span>
@@ -512,7 +455,6 @@
         </div>
       </div>
     </section>
-
     <!-- Education Section -->
     <section id="education" class="education-section">
       <div class="education-container">
@@ -551,7 +493,6 @@
         </div>
       </div>
     </section>
-
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
       <div class="skills-container">
@@ -560,7 +501,6 @@
           Comprehensive skill portfolio spanning full-stack development, data
           analysis, and modern frameworks
         </p>
-
         <!-- Skills Categories -->
         <div class="skills-categories">
           <!-- Frontend Development -->
@@ -585,7 +525,6 @@
                 </div>
                 <div class="skill-badge">95%</div>
               </div>
-
               <div class="skill-card expert" data-skill="CSS3">
                 <div class="skill-icon">🎨</div>
                 <div class="skill-info">
@@ -600,7 +539,6 @@
                 </div>
                 <div class="skill-badge">92%</div>
               </div>
-
               <div class="skill-card expert" data-skill="JavaScript">
                 <div class="skill-icon">⚡</div>
                 <div class="skill-info">
@@ -615,7 +553,6 @@
                 </div>
                 <div class="skill-badge">90%</div>
               </div>
-
               <div class="skill-card advanced" data-skill="React">
                 <div class="skill-icon">⚛️</div>
                 <div class="skill-info">
@@ -632,7 +569,6 @@
               </div>
             </div>
           </div>
-
           <!-- Backend Development -->
           <div class="skill-category">
             <div class="category-header">
@@ -655,7 +591,6 @@
                 </div>
                 <div class="skill-badge">93%</div>
               </div>
-
               <div class="skill-card expert" data-skill="Node.js">
                 <div class="skill-icon">🟢</div>
                 <div class="skill-info">
@@ -670,7 +605,6 @@
                 </div>
                 <div class="skill-badge">88%</div>
               </div>
-
               <div class="skill-card advanced" data-skill="Express.js">
                 <div class="skill-icon">🚀</div>
                 <div class="skill-info">
@@ -685,7 +619,6 @@
                 </div>
                 <div class="skill-badge">82%</div>
               </div>
-
               <div class="skill-card advanced" data-skill="Next.js">
                 <div class="skill-icon">▲</div>
                 <div class="skill-info">
@@ -702,7 +635,6 @@
               </div>
             </div>
           </div>
-
           <!-- Database & Tools -->
           <div class="skill-category">
             <div class="category-header">
@@ -725,7 +657,6 @@
                 </div>
                 <div class="skill-badge">83%</div>
               </div>
-
               <div class="skill-card intermediate" data-skill="PostgreSQL">
                 <div class="skill-icon">🐘</div>
                 <div class="skill-info">
@@ -740,7 +671,6 @@
                 </div>
                 <div class="skill-badge">72%</div>
               </div>
-
               <div class="skill-card advanced" data-skill="Git">
                 <div class="skill-icon">📚</div>
                 <div class="skill-info">
@@ -755,7 +685,6 @@
                 </div>
                 <div class="skill-badge">86%</div>
               </div>
-
               <div class="skill-card intermediate" data-skill="Docker">
                 <div class="skill-icon">🐳</div>
                 <div class="skill-info">
@@ -773,7 +702,6 @@
             </div>
           </div>
         </div>
-
         <!-- Skills Summary -->
         <div class="skills-summary">
           <div class="summary-stats">
@@ -797,7 +725,6 @@
         </div>
       </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
       <div class="projects-container">
@@ -823,7 +750,6 @@
             </button>
           </div>
         </div>
-
         <!-- Interactive Projects Showcase -->
         <div class="projects-showcase">
           <!-- Featured Project Slider -->
@@ -874,7 +800,6 @@
               </div>
             </div>
           </div>
-
           <!-- Projects Grid: 2x2 Layout -->
           <div class="projects-grid">
             <!-- Project Card 1: Elith Pharmacy -->
@@ -927,7 +852,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Project Card 2: Afro Shop Uganda -->
             <div class="featured-project">
               <div class="project-preview">
@@ -975,7 +899,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Project Card 3: EcoSmart Waste Management -->
             <div class="featured-project">
               <div class="project-preview">
@@ -1022,7 +945,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Project Card 4: Portfolio Website -->
             <div class="featured-project">
               <div class="project-preview">
@@ -1071,7 +993,6 @@
             </div>
           </div>
         </div>
-
         <!-- Project Stats Dashboard -->
         <div class="projects-dashboard">
           <div class="dashboard-stats">
@@ -1124,7 +1045,6 @@
         </div>
       </div>
     </section>
-
     <!-- Certificates Section -->
     <section id="certificates" class="certificates-section">
       <div class="certificates-container">
@@ -1172,7 +1092,6 @@
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <!-- Animated Background Elements -->
@@ -1183,7 +1102,6 @@
         <div class="contact-star"></div>
         <div class="contact-star"></div>
       </div>
-
       <div class="contact-container">
         <!-- Section Header -->
         <div class="contact-header">
@@ -1200,7 +1118,6 @@
             <div class="decoration-line"></div>
           </div>
         </div>
-
         <!-- Main Content Grid -->
         <div class="contact-grid">
           <!-- Contact Information Panel -->
@@ -1214,7 +1131,6 @@
                   innovation.
                 </p>
               </div>
-
               <!-- Contact Methods -->
               <div class="contact-methods">
                 <div class="contact-method">
@@ -1223,13 +1139,14 @@
                   </div>
                   <div class="method-content">
                     <h4 class="method-title">Email</h4>
-                    <p class="method-value">kamwangaraheem@gmail.com</p>
+                    <p class="method-value email-address">
+                      kamwangaraheem@gmail.com
+                    </p>
                     <span class="method-note"
                       >Preferred for detailed discussions</span
                     >
                   </div>
                 </div>
-
                 <div class="contact-method">
                   <div class="method-icon">
                     <span class="icon">📱</span>
@@ -1240,7 +1157,6 @@
                     <span class="method-note">Available 9 AM - 7 PM EAT</span>
                   </div>
                 </div>
-
                 <div class="contact-method">
                   <div class="method-icon">
                     <span class="icon">📍</span>
@@ -1253,7 +1169,6 @@
                     >
                   </div>
                 </div>
-
                 <div class="contact-method">
                   <div class="method-icon">
                     <span class="icon">💬</span>
@@ -1271,7 +1186,6 @@
                   </div>
                 </div>
               </div>
-
               <!-- Social Connect -->
               <div class="social-connect">
                 <h4 class="social-title">Connect With Me</h4>
@@ -1302,7 +1216,6 @@
                   </a>
                 </div>
               </div>
-
               <!-- Response Time -->
               <div class="response-info">
                 <div class="response-indicator">
@@ -1314,7 +1227,6 @@
               </div>
             </div>
           </div>
-
           <!-- Contact Form Panel -->
           <div class="contact-form-panel">
             <div class="form-content">
@@ -1325,7 +1237,6 @@
                   as possible.
                 </p>
               </div>
-
               <form
                 class="contact-form"
                 method="POST"
@@ -1356,7 +1267,6 @@
                     />
                   </div>
                 </div>
-
                 <div class="form-group">
                   <label for="subject" class="form-label">Subject</label>
                   <select
@@ -1375,7 +1285,6 @@
                     <option value="other">Other</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="message" class="form-label">Message</label>
                   <textarea
@@ -1387,7 +1296,6 @@
                     class="form-textarea"
                   ></textarea>
                 </div>
-
                 <div class="form-actions">
                   <button type="submit" class="contact-btn primary">
                     <span class="btn-icon">🚀</span>
@@ -1399,7 +1307,6 @@
                   </button>
                 </div>
               </form>
-
               <!-- Form Features -->
               <div class="form-features">
                 <div class="feature-item">
@@ -1420,7 +1327,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
       <!-- Animated Background Elements -->
@@ -1434,13 +1340,11 @@
         <div class="star"></div>
         <div class="star"></div>
       </div>
-
       <div class="footer-rockets">
         <div class="rocket rocket-1">🚀</div>
         <div class="rocket rocket-2">🛸</div>
         <div class="rocket rocket-3">🌌</div>
       </div>
-
       <div class="footer-plants">
         <div class="footer-plant plant-1">🌱</div>
         <div class="footer-plant plant-2">🌿</div>
@@ -1448,7 +1352,6 @@
         <div class="footer-plant plant-4">🍃</div>
         <div class="footer-plant plant-5">🌳</div>
       </div>
-
       <div class="footer-content">
         <!-- Hero Section -->
         <div class="footer-hero">
@@ -1485,7 +1388,6 @@
             </div>
           </div>
         </div>
-
         <!-- Main Footer Content -->
         <div class="footer-main">
           <!-- Brand & Mission Column -->
@@ -1519,7 +1421,6 @@
               </div>
             </div>
           </div>
-
           <!-- Quick Links Column -->
           <div class="footer-links">
             <h4 class="links-title">Quick Navigation</h4>
@@ -1558,7 +1459,6 @@
               </div>
             </div>
           </div>
-
           <!-- Tech Stack & Tools Column -->
           <div class="footer-tech">
             <h4 class="tech-title">Technology Stack</h4>
@@ -1592,7 +1492,6 @@
               </div>
             </div>
           </div>
-
           <!-- Contact & Social Column -->
           <div class="footer-contact">
             <h4 class="contact-title">Let's Connect</h4>
@@ -1649,7 +1548,6 @@
             </div>
           </div>
         </div>
-
         <!-- Footer Bottom -->
         <div class="footer-bottom">
           <div class="bottom-content">
@@ -1660,7 +1558,6 @@
             </div>
           </div>
         </div>
-
         <!-- Final Copyright Section -->
         <div class="footer-copyright-final">
           <div class="copyright-content">
@@ -1670,7 +1567,6 @@
         </div>
       </div>
     </footer>
-
     <!-- JavaScript for Interactive About Section -->
     <script>
       // About Section Tab Navigation
@@ -1678,84 +1574,68 @@
         const navTabs = document.querySelectorAll(".nav-tab");
         const storySections = document.querySelectorAll(".story-section");
         let isTransitioning = false;
-
         // Smooth section transition function
         function transitionToSection(targetSection) {
           if (isTransitioning) return;
           isTransitioning = true;
-
           // Find current active section
           const currentActive = document.querySelector(".story-section.active");
           const targetElement = document.querySelector(
             `[data-section="${targetSection}"]`
           );
-
           if (currentActive === targetElement) {
             isTransitioning = false;
             return;
           }
-
           // Add exiting class to current section
           if (currentActive) {
             currentActive.classList.add("exiting");
-
             // Remove active class after a brief delay
             setTimeout(() => {
               currentActive.classList.remove("active", "exiting");
             }, 300);
           }
-
           // Activate target section with slight delay
           setTimeout(() => {
             targetElement.classList.add("active");
             isTransitioning = false;
           }, 150);
         }
-
         // Tab click handler
         navTabs.forEach((tab) => {
           tab.addEventListener("click", function (e) {
             e.preventDefault();
             if (isTransitioning) return;
-
             const targetSection = this.getAttribute("data-target");
-
             // Update active tab
             navTabs.forEach((t) => t.classList.remove("active"));
             this.classList.add("active");
-
             // Transition to target section
             transitionToSection(targetSection);
           });
         });
-
         // Profile image hover effect
         const profileImage = document.querySelector(".profile-image");
         const imageFrame = document.querySelector(".image-frame");
-
         if (profileImage && imageFrame) {
           imageFrame.addEventListener("mouseenter", function () {
             profileImage.style.transform = "scale(1.1) rotate(5deg)";
           });
-
           imageFrame.addEventListener("mouseleave", function () {
             profileImage.style.transform = "scale(1) rotate(0deg)";
           });
         }
-
         // Animated counter for stats
         function animateCounter(element, target, duration = 2000) {
           const start = 0;
           const increment = target / (duration / 16);
           let current = start;
-
           const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
               current = target;
               clearInterval(timer);
             }
-
             if (target.toString().includes("+")) {
               element.textContent = Math.floor(current) + "+";
             } else {
@@ -1763,25 +1643,21 @@
             }
           }, 16);
         }
-
         // Intersection Observer for animations
         const observerOptions = {
           threshold: 0.3,
           rootMargin: "0px 0px -50px 0px",
         };
-
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("animate-in");
-
               // Animate counters when they come into view
               if (entry.target.classList.contains("stat-number")) {
                 const text = entry.target.textContent;
                 const number = parseInt(text.replace(/[^0-9]/g, ""));
                 animateCounter(entry.target, number);
               }
-
               // Stagger animation for interest cards
               if (entry.target.classList.contains("interest-card")) {
                 const cards =
@@ -1796,7 +1672,6 @@
             }
           });
         }, observerOptions);
-
         // Observe elements for animations
         const animatedElements = document.querySelectorAll(
           ".stat-number, .interest-card, .action-btn, .quick-link"
@@ -1810,13 +1685,11 @@
           }
           observer.observe(el);
         });
-
         // Enhanced button hover effects
         const actionButtons = document.querySelectorAll(".action-btn");
         actionButtons.forEach((button) => {
           button.addEventListener("mouseenter", function () {
             this.style.transform = "translateY(-3px) scale(1.05)";
-
             // Add ripple effect
             const ripple = document.createElement("div");
             ripple.style.position = "absolute";
@@ -1828,39 +1701,32 @@
             ripple.style.left = "0";
             ripple.style.animation = "ripple 0.6s ease-out";
             ripple.style.pointerEvents = "none";
-
             this.style.position = "relative";
             this.appendChild(ripple);
-
             setTimeout(() => {
               if (ripple.parentNode) {
                 ripple.parentNode.removeChild(ripple);
               }
             }, 600);
           });
-
           button.addEventListener("mouseleave", function () {
             this.style.transform = "translateY(0) scale(1)";
           });
         });
-
         // Quick links hover effect
         const quickLinks = document.querySelectorAll(".quick-link");
         quickLinks.forEach((link) => {
           link.addEventListener("mouseenter", function () {
             this.style.transform = "translateY(-2px) scale(1.05)";
           });
-
           link.addEventListener("mouseleave", function () {
             this.style.transform = "translateY(0) scale(1)";
           });
         });
-
         // Parallax effect for floating shapes
         window.addEventListener("scroll", function () {
           const scrolled = window.pageYOffset;
           const aboutSection = document.getElementById("about");
-
           if (aboutSection) {
             const shapes = aboutSection.querySelectorAll(
               ".floating-shapes div"
@@ -1871,7 +1737,6 @@
             });
           }
         });
-
         // Add CSS animation for ripple effect
         const style = document.createElement("style");
         style.textContent = `
@@ -1885,11 +1750,9 @@
               opacity: 0;
             }
           }
-          
           .animate-in {
             animation: slideInUp 0.8s ease-out;
           }
-          
           @keyframes slideInUp {
             from {
               transform: translateY(30px);
@@ -1902,33 +1765,49 @@
           }
         `;
         document.head.appendChild(style);
-
         // Auto-cycle through story tabs with smooth transitions
         let currentTabIndex = 0;
         const tabCycleInterval = 8000; // 8 seconds
-
         function autoSwitchTab() {
           if (navTabs.length > 0 && !isTransitioning) {
             // Update active tab
             navTabs.forEach((t) => t.classList.remove("active"));
             navTabs[currentTabIndex].classList.add("active");
-
             // Get target section
             const targetSection =
               navTabs[currentTabIndex].getAttribute("data-target");
-
             // Smooth transition to next section
             transitionToSection(targetSection);
-
             // Move to next tab
             currentTabIndex = (currentTabIndex + 1) % navTabs.length;
           }
         }
-
         // Start auto-cycling after initial load
         setTimeout(() => {
           setInterval(autoSwitchTab, tabCycleInterval);
         }, 3000); // Wait 3 seconds before starting auto-cycle
+      });
+
+      // Professional Scroll Indicator
+      window.addEventListener("scroll", function () {
+        const scrollIndicator = document.getElementById("scrollIndicator");
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.body.offsetHeight;
+        const winHeight = window.innerHeight;
+        const scrollPercent = scrollTop / (docHeight - winHeight);
+        const scrollPercentWidth = scrollPercent * 100;
+
+        scrollIndicator.style.width = scrollPercentWidth + "%";
+      });
+
+      // Enhanced Background Interaction
+      document.addEventListener("mousemove", function (e) {
+        const body = document.body;
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        // Subtle background parallax effect
+        body.style.backgroundPosition = `${x * 20}px ${y * 20}px`;
       });
     </script>
   </body>
