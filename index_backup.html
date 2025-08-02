@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raheem's Eco-Space Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
     <!-- Professional Scroll Indicator -->
@@ -1039,43 +1040,36 @@
           </div>
         </div>
 
-        <!-- Interactive Learning Dashboard (CSS-only) -->
+        <!-- Interactive Learning Dashboard -->
         <div class="learning-dashboard">
-          <!-- CSS-only Navigation Tabs -->
-          <div class="tab-container">
-            <input type="radio" id="tab-all" name="cert-tabs" checked>
-            <input type="radio" id="tab-sql" name="cert-tabs">
-            <input type="radio" id="tab-excel" name="cert-tabs">
-            <input type="radio" id="tab-goals" name="cert-tabs">
-            
-            <div class="dashboard-nav">
-              <label for="tab-all" class="nav-tab">
-                <span class="tab-icon">📊</span>
-                <span class="tab-text">All Certificates</span>
-                <span class="tab-count">5</span>
-              </label>
-              <label for="tab-sql" class="nav-tab">
-                <span class="tab-icon">🗃️</span>
-                <span class="tab-text">SQL Track</span>
-                <span class="tab-count">3</span>
-              </label>
-              <label for="tab-excel" class="nav-tab">
-                <span class="tab-icon">📈</span>
-                <span class="tab-text">Excel Track</span>
-                <span class="tab-count">2</span>
-              </label>
-              <label for="tab-goals" class="nav-tab">
-                <span class="tab-icon">🎯</span>
-                <span class="tab-text">Next Goals</span>
-                <span class="tab-count">4</span>
-              </label>
-            </div>
+          <!-- Navigation Tabs -->
+          <div class="dashboard-nav">
+            <button class="nav-tab active" data-track="all">
+              <span class="tab-icon">📊</span>
+              <span class="tab-text">All Certificates</span>
+              <span class="tab-count">5</span>
+            </button>
+            <button class="nav-tab" data-track="sql">
+              <span class="tab-icon">🗃️</span>
+              <span class="tab-text">SQL Track</span>
+              <span class="tab-count">3</span>
+            </button>
+            <button class="nav-tab" data-track="excel">
+              <span class="tab-icon">📈</span>
+              <span class="tab-text">Excel Track</span>
+              <span class="tab-count">2</span>
+            </button>
+            <button class="nav-tab" data-track="goals">
+              <span class="tab-icon">🎯</span>
+              <span class="tab-text">Next Goals</span>
+              <span class="tab-count">4</span>
+            </button>
           </div>
 
           <!-- Certificate Content Area -->
           <div class="dashboard-content">
             <!-- All Certificates View -->
-            <div class="content-panel" data-content="all">
+            <div class="content-panel active" data-content="all">
               <div class="panel-header">
                 <h3 class="panel-title">Complete Learning Journey</h3>
                 <div class="progress-indicator">
@@ -1339,8 +1333,8 @@
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
+    <section id="contact" class="contact-section">
       <!-- Animated Background Elements -->
       <div class="contact-bg-stars">
         <div class="contact-star"></div>
@@ -1367,7 +1361,7 @@
         </div>
         <!-- Main Content Grid -->
         <div class="contact-grid">
-          <!-- Contact Information Panel -->
+          <!-- Content will be here after cleanup -->
                 <div class="achievement-badge verified">📋 Completed</div>
                 <div class="certificate-preview">
                   <div class="cert-icon">�</div>
@@ -1939,8 +1933,8 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
+    <!-- JavaScript for Interactive About Section -->
+    <script>
       // About Section Tab Navigation
       document.addEventListener("DOMContentLoaded", function () {
         const navTabs = document.querySelectorAll(".nav-tab");
