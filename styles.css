@@ -5664,7 +5664,7 @@ section::before {
 /* ===== INNOVATIVE PROJECTS SECTION ===== */
 .projects-section {
   background: linear-gradient(135deg, #0a1828 0%, #101820 50%, #16222a 100%);
-  padding: 5rem 0;
+  padding: 3rem 0;
   position: relative;
   overflow: hidden;
 }
