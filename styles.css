@@ -17,7 +17,7 @@ html {
 }
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  padding-top: 80px;
+  padding-top: 100px;
   background: 
     /* Soft stellar atmosphere with neutral tones */ radial-gradient(
       ellipse at 10% 20%,
@@ -223,9 +223,10 @@ section::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 2rem;
+  gap: 2rem;
+  padding: 1.5rem 3rem;
   transition: all 0.3s ease;
+  min-height: 100px;
 }
 
 .navbar:hover {
@@ -238,7 +239,7 @@ section::before {
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -248,8 +249,8 @@ section::before {
 }
 
 .navbar-profile-img {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #2ecc40;
@@ -264,7 +265,7 @@ section::before {
 .navbar-name {
   color: #2ecc40;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
 }
 
@@ -272,7 +273,7 @@ section::before {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -282,11 +283,11 @@ section::before {
   color: #2ecc40;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0.3px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
   position: relative;
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
@@ -370,11 +371,11 @@ section::before {
   /* Hide nav-list by default on mobile */
   .nav-list {
     position: fixed;
-    top: 80px;
+    top: 100px;
     right: -320px;
     width: 300px;
     height: auto;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 100px);
     background: linear-gradient(
       135deg,
       rgba(5, 10, 15, 0.98) 0%,
