@@ -1203,7 +1203,8 @@ section::before {
 /* ====== Floating Plant Decorations ====== */
 .animated-plant {
   position: absolute;
-  bottom: 15rem;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 4rem;
   z-index: 1;
   animation: plantSway 4s ease-in-out infinite;
@@ -13858,5 +13859,80 @@ section::before {
 
   .card-info h4 {
     font-size: 1rem;
+  }
+}
+
+/* =====================
+   CLEAN TEXT CONTAINER - MINIMAL DESIGN
+====================== */
+
+.clean-text-container {
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(127, 255, 166, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+
+.clean-text-container .story-title {
+  color: #7fffa6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(127, 255, 166, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.story-text {
+  line-height: 1.7;
+}
+
+.story-text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.story-text strong {
+  color: #7fffa6;
+  font-weight: 600;
+}
+
+/* Responsive Design for Clean Text */
+@media (max-width: 768px) {
+  .clean-text-container {
+    padding: 1.2rem;
+    margin: 0.8rem 0;
+  }
+
+  .clean-text-container .story-title {
+    font-size: 1.3rem;
+  }
+
+  .story-text p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .clean-text-container {
+    padding: 1rem;
+  }
+
+  .clean-text-container .story-title {
+    font-size: 1.2rem;
+  }
+
+  .story-text p {
+    font-size: 0.9rem;
   }
 }
