@@ -12107,8 +12107,7 @@ section::before {
   padding: 2.5rem;
   margin: 2rem 0;
   backdrop-filter: blur(10px);
-  box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.2),
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   position: relative;
   overflow: hidden;
@@ -12120,9 +12119,7 @@ section::before {
 .about-text-wrapper:hover {
   transform: translateY(-8px) scale(1.01);
   border-color: rgba(127, 255, 166, 0.3);
-  box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.3),
-    0 0 30px rgba(127, 255, 166, 0.15),
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 30px rgba(127, 255, 166, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   background: linear-gradient(
     135deg,
@@ -12210,7 +12207,12 @@ section::before {
 
 /* Keep Original Text Styling for Readability */
 .about-text-wrapper .text-paragraph p {
-  color: rgba(255, 255, 255, 0.85); /* Slightly brighter for better readability */
+  color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Slightly brighter for better readability */
   font-size: 1.1rem;
   line-height: 1.8;
   margin: 0;
@@ -12266,7 +12268,8 @@ section::before {
 
 /* Gentle Glow Animation for Outer Effect */
 @keyframes gentleGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
   }
   50% {
@@ -12280,11 +12283,11 @@ section::before {
     padding: 2rem;
     margin: 1.5rem 0;
   }
-  
+
   .about-text-wrapper:hover {
     transform: translateY(-5px) scale(1.005);
   }
-  
+
   .about-text-wrapper:hover .text-paragraph {
     transform: translateX(3px);
   }
@@ -12295,11 +12298,11 @@ section::before {
     padding: 1.5rem;
     border-radius: 15px;
   }
-  
+
   .about-text-wrapper:hover {
     transform: translateY(-3px) scale(1.002);
   }
-  
+
   .about-text-wrapper:hover .text-paragraph {
     transform: translateX(2px);
   }
