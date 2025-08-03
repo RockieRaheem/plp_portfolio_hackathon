@@ -1203,7 +1203,7 @@ section::before {
 /* ====== Floating Plant Decorations ====== */
 .animated-plant {
   position: absolute;
-  bottom: 2rem;
+  bottom: 15rem;
   font-size: 4rem;
   z-index: 1;
   animation: plantSway 4s ease-in-out infinite;
@@ -12630,34 +12630,33 @@ section::before {
 .typing-text {
   position: relative;
   overflow: hidden;
-  border-right: 2px solid #7fffa6;
   white-space: nowrap;
-  animation: typing 3s steps(25) 1.5s forwards, blink 1s infinite 4.5s;
+  animation: gentleGlow 3s ease-in-out infinite alternate;
 }
 
 .title-cursor {
   color: #7fffa6;
-  animation: blink 1s infinite;
+  animation: softBlink 2s ease-in-out infinite;
   margin-left: 0.2rem;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes gentleGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(127, 255, 166, 0.3);
   }
-  to {
-    width: 100%;
+  100% {
+    text-shadow: 0 0 15px rgba(127, 255, 166, 0.6);
   }
 }
 
-@keyframes blink {
+@keyframes softBlink {
   0%,
-  50% {
+  70% {
     opacity: 1;
   }
-  51%,
+  71%,
   100% {
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 
@@ -13430,5 +13429,434 @@ section::before {
   .chapter-text p {
     font-size: 1rem;
     text-align: left;
+  }
+}
+
+/* =====================
+   COMPACT STORY CONTAINER - SPACE-SAVING DESIGN
+====================== */
+
+.compact-story-container {
+  max-width: 100%;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+/* Story Header */
+.story-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.story-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2rem;
+  color: #7fffa6;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.title-icon {
+  font-size: 1.8rem;
+  animation: gentleRotate 4s ease-in-out infinite;
+}
+
+@keyframes gentleRotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.story-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Compact Story Grid - 2x2 Layout */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Story Cards */
+.story-card {
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.08) 0%,
+    rgba(46, 204, 64, 0.05) 50%,
+    rgba(8, 14, 20, 0.9) 100%
+  );
+  border: 1px solid rgba(127, 255, 166, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7fffa6, #2ecc40);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.story-card:hover::before {
+  opacity: 1;
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(127, 255, 166, 0.4);
+  box-shadow: 0 8px 25px rgba(127, 255, 166, 0.15);
+}
+
+/* Card Headers */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(127, 255, 166, 0.15);
+}
+
+.card-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #7fffa6;
+  text-shadow: 0 0 10px rgba(127, 255, 166, 0.4);
+  min-width: 40px;
+}
+
+.card-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-icon {
+  font-size: 1.3rem;
+  animation: subtleBounce 2s ease-in-out infinite;
+}
+
+@keyframes subtleBounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+/* Card Content */
+.card-content {
+  line-height: 1.6;
+}
+
+.card-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+/* Highlight Classes */
+.highlight-role {
+  color: #7fffa6;
+  font-weight: 600;
+  background: rgba(127, 255, 166, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+.highlight {
+  font-weight: 600;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.highlight.eco {
+  background: rgba(127, 255, 166, 0.15);
+  color: #7fffa6;
+}
+
+.highlight.performance {
+  background: rgba(74, 144, 226, 0.15);
+  color: #4a90e2;
+}
+
+.highlight.balance {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.highlight.future {
+  background: rgba(156, 39, 176, 0.15);
+  color: #e91e63;
+}
+
+.highlight-achievement {
+  background: rgba(255, 87, 34, 0.15);
+  color: #ff5722;
+  font-weight: 600;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+.highlight:hover {
+  transform: scale(1.02);
+}
+
+/* Card Tags */
+.card-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-tags .tag {
+  background: rgba(127, 255, 166, 0.1);
+  color: #7fffa6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(127, 255, 166, 0.2);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(127, 255, 166, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech {
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid;
+  transition: all 0.2s ease;
+}
+
+.tech.react {
+  background: rgba(97, 218, 251, 0.1);
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.3);
+}
+
+.tech.nextjs {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tech.node {
+  background: rgba(104, 160, 99, 0.1);
+  color: #68a063;
+  border-color: rgba(104, 160, 99, 0.3);
+}
+
+.tech.python {
+  background: rgba(255, 212, 59, 0.1);
+  color: #ffd43b;
+  border-color: rgba(255, 212, 59, 0.3);
+}
+
+.tech:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Mini Stats */
+.mini-stats {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.mini-stat {
+  text-align: center;
+  padding: 0.8rem;
+  background: rgba(127, 255, 166, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(127, 255, 166, 0.15);
+  transition: all 0.2s ease;
+  min-width: 60px;
+}
+
+.mini-stat:hover {
+  background: rgba(127, 255, 166, 0.1);
+  transform: translateY(-2px);
+}
+
+.mini-stat .number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #7fffa6;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 0 8px rgba(127, 255, 166, 0.3);
+}
+
+.mini-stat .label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Call to Action */
+.call-to-action {
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.12) 0%,
+    rgba(46, 204, 64, 0.08) 100%
+  );
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(127, 255, 166, 0.2);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.call-to-action:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.18) 0%,
+    rgba(46, 204, 64, 0.12) 100%
+  );
+  transform: translateY(-1px);
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.cta-icon {
+  font-size: 1.2rem;
+  animation: gentleWave 2s ease-in-out infinite;
+}
+
+@keyframes gentleWave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+.cta-text {
+  font-size: 0.9rem;
+  color: #7fffa6;
+  font-weight: 600;
+}
+
+/* =====================
+   RESPONSIVE DESIGN FOR COMPACT LAYOUT
+====================== */
+
+@media (max-width: 768px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .story-card {
+    padding: 1.2rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .card-info {
+    width: 100%;
+  }
+
+  .mini-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .compact-story-container {
+    margin: 1.5rem 0;
+  }
+
+  .story-title {
+    font-size: 1.6rem;
+  }
+
+  .story-card {
+    padding: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .card-number {
+    font-size: 1.2rem;
+    min-width: 30px;
+  }
+
+  .card-info h4 {
+    font-size: 1rem;
   }
 }
