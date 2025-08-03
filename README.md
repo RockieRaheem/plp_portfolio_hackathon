@@ -19,11 +19,13 @@ This portfolio website includes all the required sections:
 ## 🛠️ Technical Implementation
 
 ### **Built With:**
+
 - **HTML5**: Semantic structure and accessibility
 - **CSS3**: Advanced styling with animations and responsive design
 - **Pure CSS-Only Interactivity**: Tab navigation without JavaScript (hackathon compliant)
 
 ### **Key Features:**
+
 - 📱 **Fully Responsive Design**: Works on all devices
 - 🎨 **Modern UI/UX**: Clean, professional design with smooth animations
 - ♿ **Accessible**: Semantic HTML and proper contrast ratios
@@ -45,6 +47,7 @@ plp_portfolio_hackathon/
 ## 🎓 Educational Background
 
 **Bachelor of Science in Information Technology**
+
 - Focus: Software Development and Data Management
 - Skills: Problem-solving, analytical thinking, project management
 
@@ -62,15 +65,18 @@ plp_portfolio_hackathon/
 This portfolio features an interactive CSS-only dashboard showcasing:
 
 ### **SQL Track** (3 certificates)
+
 - SQL Fundamentals
 - Intermediate SQL
 - Joining Data in SQL
 
 ### **Excel Track** (2 certificates)
+
 - Introduction to Excel
 - Excel Data Preparation
 
 ### **Future Goals** (4 upcoming)
+
 - Python for Data Science
 - Advanced SQL Analytics
 - Web Development Frameworks
@@ -94,6 +100,7 @@ Feel free to reach out for collaboration opportunities!
 ## 🚀 Deployment
 
 This portfolio is designed to be deployed on:
+
 - GitHub Pages
 - Netlify
 - Vercel
@@ -126,4 +133,4 @@ This portfolio is designed to be deployed on:
 
 **Built with 💚 for a sustainable future**
 
-*This project represents my commitment to clean code, user experience, and environmental consciousness in technology.*
+_This project represents my commitment to clean code, user experience, and environmental consciousness in technology._

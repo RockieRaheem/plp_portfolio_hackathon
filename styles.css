@@ -6549,7 +6549,202 @@ section::before {
   }
 }
 
-/* ====== Enhanced Certificates Section ====== */
+/* ====== Achievements Section - Clean & Compact ====== */
+.certificates-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #a8b2d1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 178, 209, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  border-color: #64ffda;
+  box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.track-icon {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.track-info h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0 0 5px 0;
+}
+
+.cert-count {
+  color: #64ffda;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.achievements-list {
+  margin-bottom: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(168, 178, 209, 0.1);
+}
+
+.achievement-item:last-child {
+  border-bottom: none;
+}
+
+.achievement-title {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.achievement-level {
+  color: #64ffda;
+  font-size: 0.85rem;
+  background: rgba(100, 255, 218, 0.1);
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+.card-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(168, 178, 209, 0.1);
+}
+
+.skills-summary {
+  color: #a8b2d1;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.progress-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(168, 178, 209, 0.1);
+}
+
+.progress-stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: #a8b2d1;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Track-specific styling */
+.sql-track {
+  border-left: 4px solid #4ade80;
+}
+
+.excel-track {
+  border-left: 4px solid #60a5fa;
+}
+
+.goals-track {
+  border-left: 4px solid #fbbf24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .achievement-card {
+    padding: 20px;
+  }
+
+  .progress-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-section {
+    padding: 60px 0;
+  }
+
+  .section-container {
+    padding: 0 15px;
+  }
+
+  .progress-summary {
+    grid-template-columns: 1fr;
+  }
+}
 #certificates {
   background: linear-gradient(135deg, #101820 0%, #1a2e35 50%, #16222a 100%);
   padding: 5rem 0 4rem 0;
@@ -6607,7 +6802,7 @@ section::before {
 #tab-sql:checked ~ .dashboard-nav label[for="tab-sql"]::before,
 #tab-excel:checked ~ .dashboard-nav label[for="tab-excel"]::before,
 #tab-goals:checked ~ .dashboard-nav label[for="tab-goals"]::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -6649,8 +6844,14 @@ section::before {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Learning Dashboard */
