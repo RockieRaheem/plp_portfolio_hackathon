@@ -8569,7 +8569,7 @@ section::before {
 
 /* Footer Hero Section */
 .footer-hero {
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   background: linear-gradient(
     135deg,
     rgba(46, 204, 64, 0.1) 0%,
@@ -8698,8 +8698,8 @@ section::before {
 .footer-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3rem;
-  padding: 4rem 2rem;
+  gap: 2rem;
+  padding: 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -8750,40 +8750,8 @@ section::before {
 .brand-description {
   color: #a0d4b5;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 0.95rem;
-}
-
-.brand-values {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.value-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(46, 204, 64, 0.1);
-  padding: 0.4rem 0.8rem;
-  border-radius: 15px;
-  border: 1px solid rgba(46, 204, 64, 0.2);
-  transition: all 0.3s ease;
-}
-
-.value-item:hover {
-  background: rgba(46, 204, 64, 0.2);
-  transform: translateY(-2px);
-}
-
-.value-icon {
-  font-size: 1rem;
-}
-
-.value-text {
-  font-size: 0.85rem;
-  color: #2ecc40;
-  font-weight: 500;
 }
 
 /* Links Column */
@@ -8970,7 +8938,7 @@ section::before {
 .footer-bottom {
   background: transparent;
   border: none;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .bottom-content {
@@ -9003,7 +8971,7 @@ section::before {
 .footer-copyright-final {
   background: transparent;
   border: none;
-  padding: 1.5rem 2rem;
+  padding: 0.8rem 2rem;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -9062,12 +9030,12 @@ section::before {
 @media (max-width: 768px) {
   .footer-main {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .footer-hero {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .hero-title {
@@ -9093,7 +9061,7 @@ section::before {
   }
 
   .footer-copyright-final {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
 
   .copyright-content p {
