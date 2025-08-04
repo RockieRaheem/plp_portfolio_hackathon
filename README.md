@@ -30,13 +30,12 @@
 
 ### 👨‍💻 About the Developer
 
-**Kamwanga Raheem** - Software Engineering Student & Sustainable Tech Innovator
+**Kamwanga Raheem** - Software Engineering Student, PLP Academy Student & Sustainable Tech Innovator
 
 - 🎓 **Education:** Uganda Technology and Management University (UTAMU)
-- 🌍 **Location:** Kampala, Uganda | **Age:** 24
-- 🚀 **Expertise:** Full-stack development (React, Next.js, Node.js, Python)
+- 🌍 **Location:** Kampala, Uganda | **Age:** 23
+- 🚀 **Expertise:** Full-stack development (React, Next.js,Python)
 - 🌱 **Mission:** Creating eco-conscious technology solutions that impact communities
-- 🏆 **Experience:** 4+ years, 15+ projects, Multiple certifications
 
 ## 📁 Project Structure
 
@@ -78,13 +77,11 @@ plp_portfolio_hackathon/
 ### 🌟 **Live Portfolio**
 - **🌐 Main Site:** [https://plp-portfolio-hackathon-sooty.vercel.app/](https://plp-portfolio-hackathon-sooty.vercel.app/)
 - **📱 Mobile Optimized:** Seamless experience across all devices (320px to 4K)
-- **⚡ Lightning Fast:** Optimized performance with 95+ PageSpeed score
 - **🔒 Secure:** HTTPS enabled with enterprise-grade security
 
 ### 🛠️ **Deployment Features**
 - ✅ **Vercel Platform:** Professional hosting with automatic deployments
 - ✅ **Zero Downtime:** Instant deployments on every GitHub push
-- ✅ **Edge Network:** Global performance optimization
 - ✅ **SEO Optimized:** Meta tags and structured data
 
 ## ✨ Portfolio Sections
@@ -171,16 +168,6 @@ plp_portfolio_hackathon/
 📈 Performance Metrics   → Lighthouse optimization
 🌱 Sustainability Focus  → Green web practices
 ```
-
-## 📊 Performance Metrics
-
-| Metric | Score | Status |
-|--------|-------|---------|
-| 🚀 **Performance** | 95+ | ✅ Excellent |
-| ♿ **Accessibility** | 100 | ✅ Perfect |
-| 🎯 **Best Practices** | 100 | ✅ Perfect |
-| 🔍 **SEO** | 95+ | ✅ Excellent |
-| 📱 **Mobile Friendly** | 100% | ✅ Perfect |
 
 ## 🌱 Sustainability Focus
 
