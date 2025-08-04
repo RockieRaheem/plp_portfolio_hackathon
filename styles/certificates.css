@@ -198,196 +198,146 @@
   }
 }
 
-/* Certificate Cards */
-.certificates-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: center;
-  align-items: stretch;
+/* Modern Certificates Grid Layout */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
+/* Modern Certificate Card Design */
 .certificate-card {
   background: linear-gradient(
-    135deg,
-    rgba(26, 42, 47, 0.9) 0%,
-    rgba(16, 24, 32, 0.8) 100%
+    145deg,
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(127, 255, 166, 0.05) 50%,
+    rgba(46, 204, 64, 0.02) 100%
   );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(127, 255, 166, 0.15);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(127, 255, 166, 0.2);
-  backdrop-filter: blur(10px);
-  padding: 2.5rem 2rem;
-  width: 32%;
-  max-width: 350px;
-  min-width: 280px;
-  flex: 1 1 32%;
+  padding: 1.5rem;
   position: relative;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  animation: certificateFloat 4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.certificate-card:nth-child(1) {
-  animation-delay: 0s;
+/* Hover Effects */
+.certificate-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(127, 255, 166, 0.4);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15), 0 0 30px rgba(127, 255, 166, 0.1);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(127, 255, 166, 0.08) 50%,
+    rgba(46, 204, 64, 0.05) 100%
+  );
 }
 
-.certificate-card:nth-child(2) {
-  animation-delay: 1.3s;
-}
-
-.certificate-card:nth-child(3) {
-  animation-delay: 2.6s;
-}
-
-@keyframes certificateFloat {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-}
-
-/* Certificate Card Decorative Elements */
+/* Gradient Border Effect */
 .certificate-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 3px;
   background: linear-gradient(90deg, #7fffa6, #2ecc40, #7fffa6);
-  border-radius: 2px 2px 0 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.8;
 }
 
-.certificate-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(127, 255, 166, 0.1),
-    transparent
-  );
-  transition: left 0.8s ease;
-}
-
-.certificate-card:hover::after {
-  left: 100%;
-}
-
-.certificate-card:hover {
-  transform: translateY(-15px) scale(1.05);
-  box-shadow: 0 20px 50px rgba(127, 255, 166, 0.3);
-  border-color: rgba(127, 255, 166, 0.5);
-  background: linear-gradient(
-    135deg,
-    rgba(127, 255, 166, 0.1) 0%,
-    rgba(26, 42, 47, 0.9) 100%
-  );
-}
-
-.certificate-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  color: #7fffa6;
-  display: block;
+/* Card Icon */
+.card-icon {
+  font-size: 2.5rem;
   text-align: center;
-  filter: drop-shadow(0 0 15px rgba(127, 255, 166, 0.6));
-  transition: transform 0.3s ease;
-  animation: iconPulse 2s ease-in-out infinite;
-}
-
-@keyframes iconPulse {
-  0%,
-  100% {
-    transform: scale(1);
-    filter: drop-shadow(0 0 15px rgba(127, 255, 166, 0.6));
-  }
-  50% {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 25px rgba(127, 255, 166, 0.8));
-  }
-}
-
-.certificate-card:hover .certificate-icon {
-  transform: scale(1.3) rotate(10deg);
-  filter: drop-shadow(0 0 30px rgba(127, 255, 166, 0.9));
-}
-
-.certificate-content {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.certificate-content h3 {
-  color: #7fffa6;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(127, 255, 166, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .card-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 15px rgba(127, 255, 166, 0.5));
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.3rem;
   font-weight: 600;
-  text-shadow: 0 0 10px rgba(127, 255, 166, 0.3);
-  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  line-height: 1.3;
   transition: color 0.3s ease;
 }
 
-.certificate-card:hover .certificate-content h3 {
-  color: #ffffff;
-  text-shadow: 0 0 15px rgba(127, 255, 166, 0.8);
+.certificate-card:hover .card-title {
+  color: #7fffa6;
+  text-shadow: 0 0 10px rgba(127, 255, 166, 0.3);
 }
 
-.certificate-content p {
-  color: #e0f2e9;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
+/* Card Description */
+.card-description {
+  font-size: 0.95rem;
+  color: rgba(224, 242, 233, 0.8);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+  transition: color 0.3s ease;
 }
 
-.certificate-card:hover .certificate-content p {
-  opacity: 1;
-  color: #b2f7cc;
+.certificate-card:hover .card-description {
+  color: rgba(224, 242, 233, 0.95);
 }
 
-/* Certificate Achievement Badge */
-.certificate-card .achievement-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: linear-gradient(135deg, #7fffa6 0%, #2ecc40 100%);
-  color: #101820;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
+/* Skills Tags Container */
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+/* Individual Skill Tags */
+.skill-tag {
+  background: rgba(127, 255, 166, 0.1);
+  color: #7fffa6;
+  padding: 0.3rem 0.75rem;
+  border-radius: 12px;
   font-size: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(127, 255, 166, 0.3);
-  opacity: 0;
-  transform: translateY(-10px);
+  font-weight: 500;
+  border: 1px solid rgba(127, 255, 166, 0.2);
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.certificate-card:hover .achievement-badge {
-  opacity: 1;
-  transform: translateY(0);
+.certificate-card:hover .skill-tag {
+  background: rgba(127, 255, 166, 0.15);
+  border-color: rgba(127, 255, 166, 0.4);
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Certificate Verification Link */
-.certificate-verify {
+/* View Achievement Button */
+.view-achievement {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.75rem 1.25rem;
   background: rgba(127, 255, 166, 0.1);
   border: 1px solid rgba(127, 255, 166, 0.3);
   border-radius: 25px;
@@ -396,209 +346,31 @@
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(10px);
+  margin-top: auto;
 }
 
-.certificate-card:hover .certificate-verify {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.certificate-verify:hover {
+.view-achievement:hover {
   background: rgba(127, 255, 166, 0.2);
   border-color: rgba(127, 255, 166, 0.5);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(127, 255, 166, 0.2);
+  box-shadow: 0 4px 15px rgba(127, 255, 166, 0.2);
 }
 
-.certificate-verify::before {
-  content: "🔗";
+.view-icon {
   font-size: 1rem;
-}
-
-/* Certificate Track-specific styling */
-.certificate-card.sql-cert {
-  border-left: 4px solid #4caf50;
-  background: linear-gradient(
-    135deg,
-    rgba(76, 175, 80, 0.1),
-    rgba(16, 24, 32, 0.8)
-  );
-}
-
-.certificate-card.excel-cert {
-  border-left: 4px solid #2196f3;
-  background: linear-gradient(
-    135deg,
-    rgba(33, 150, 243, 0.1),
-    rgba(16, 24, 32, 0.8)
-  );
-}
-
-/* Certificate Preview */
-.certificate-preview {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.certificate-preview .cert-icon {
-  font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
-  background: rgba(127, 255, 166, 0.2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.certificate-preview .cert-type {
-  font-size: 0.9rem;
-  color: rgba(127, 255, 166, 0.8);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.certificate-content h4 {
-  font-size: 1.3rem;
-  color: #7fffa6;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-/* Skills Earned */
-.skills-earned {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.skills-earned .skill-tag {
-  background: rgba(127, 255, 166, 0.15);
-  color: #7fffa6;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid rgba(127, 255, 166, 0.3);
-}
-
-/* Learning Stats */
-.learning-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin: 4rem 0;
-  padding: 2rem;
-  background: rgba(127, 255, 166, 0.05);
-  border-radius: 20px;
-  border: 1px solid rgba(127, 255, 166, 0.2);
-}
-
-.stat-card {
-  text-align: center;
-  padding: 1.5rem;
-  background: rgba(16, 24, 32, 0.6);
-  border-radius: 15px;
-  border: 1px solid rgba(127, 255, 166, 0.2);
   transition: transform 0.3s ease;
 }
 
-.stat-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(127, 255, 166, 0.4);
-}
-
-.stat-card .stat-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.stat-card .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #7fffa6;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px rgba(127, 255, 166, 0.3);
-}
-
-.stat-card .stat-label {
-  color: rgba(224, 242, 233, 0.8);
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-/* Learning Goals */
-.learning-goals {
-  background: rgba(16, 24, 32, 0.8);
-  padding: 3rem;
-  border-radius: 20px;
-  border: 1px solid rgba(127, 255, 166, 0.2);
-  margin-top: 3rem;
-}
-
-.learning-goals .goals-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.8rem;
-  color: #7fffa6;
-  margin-bottom: 2rem;
-  text-align: center;
-  justify-content: center;
-}
-
-.learning-goals .goals-icon {
-  font-size: 2rem;
-}
-
-.goals-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.goal-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  background: rgba(127, 255, 166, 0.1);
-  border-radius: 15px;
-  border: 1px solid rgba(127, 255, 166, 0.2);
-  transition: all 0.3s ease;
-}
-
-.goal-item:hover {
-  background: rgba(127, 255, 166, 0.15);
-  border-color: rgba(127, 255, 166, 0.4);
-  transform: translateX(5px);
-}
-
-.goal-item .goal-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.goal-item .goal-text {
-  color: rgba(224, 242, 233, 0.9);
-  font-weight: 500;
+.view-achievement:hover .view-icon {
+  transform: scale(1.1);
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .certificates-row {
-    gap: 2rem;
-  }
-
-  .certificate-card {
-    width: 45%;
-    min-width: 320px;
+  .certificates-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
   }
 }
 
@@ -607,66 +379,89 @@
     padding: 60px 0;
   }
 
-  .certificates-container {
+  .section-container {
     padding: 0 1rem;
   }
 
-  .certificates-container h2 {
+  .section-header .section-title {
     font-size: 2.5rem;
   }
 
-  .certificates-header .section-title {
-    font-size: 2.2rem;
+  .section-header .section-subtitle {
+    font-size: 1.1rem;
   }
 
-  .certificates-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0;
   }
 
   .certificate-card {
-    width: 100%;
-    max-width: 450px;
-    padding: 2rem 1.5rem;
+    padding: 1.25rem;
+    min-height: 240px;
   }
 
-  .learning-stats {
-    grid-template-columns: repeat(2, 1fr);
+  .card-icon {
+    font-size: 2.2rem;
   }
 
-  .goals-grid {
-    grid-template-columns: 1fr;
+  .card-title {
+    font-size: 1.2rem;
   }
 
-  .learning-goals {
-    padding: 2rem;
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .view-achievement {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  .certificates-container h2 {
+  .section-header .section-title {
     font-size: 2rem;
   }
 
   .certificate-card {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
+    min-height: 220px;
   }
 
-  .certificate-icon {
-    font-size: 3rem;
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
   }
 
-  .certificate-content h3 {
-    font-size: 1.2rem;
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
   }
 
-  .certificate-content p {
-    font-size: 1rem;
+  .card-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
   }
 
-  .learning-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .card-skills {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .view-achievement {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
   }
 }
