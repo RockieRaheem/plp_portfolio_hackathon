@@ -862,9 +862,7 @@
 
 .about-text-wrapper:hover .clean-text-container {
   border-color: rgba(127, 255, 166, 0.4);
-  box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(127, 255, 166, 0.2),
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(127, 255, 166, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
