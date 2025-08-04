@@ -1,0 +1,1002 @@
+/* =====================
+   Hero Section Stylesheet
+   Author: Kamwanga Raheem
+   Space ecosystem hero with animations
+====================== */
+
+/* =====================
+   SPACE ECOSYSTEM HERO SECTION - PROFESSIONAL DESIGN
+====================== */
+#home {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #0a0a0f 0%,
+    #151520 25%,
+    #1a1a2e 50%,
+    #16213e 75%,
+    #0a0a0f 100%
+  );
+  perspective: 1000px;
+}
+
+/* Realistic Space Background with Multiple Layers */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    /* Distant galaxies */ radial-gradient(
+      ellipse at 20% 20%,
+      rgba(127, 255, 166, 0.02) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      rgba(46, 204, 64, 0.015) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 60% 40%,
+      rgba(255, 255, 255, 0.008) 0%,
+      transparent 60%
+    ),
+    /* Nebula clouds */
+      radial-gradient(
+        circle at 30% 70%,
+        rgba(127, 255, 166, 0.03) 0%,
+        transparent 40%
+      ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(46, 204, 64, 0.02) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 60%,
+      rgba(255, 255, 255, 0.01) 0%,
+      transparent 45%
+    );
+  animation: cosmicDrift 120s linear infinite;
+  z-index: 1;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    /* Cosmic dust and particle effects */ linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(127, 255, 166, 0.005) 50%,
+      transparent 70%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 40%,
+      rgba(46, 204, 64, 0.003) 60%,
+      transparent 80%
+    );
+  animation: cosmicParticles 80s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+@keyframes cosmicDrift {
+  0% {
+    transform: translateX(-100px) translateY(-50px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(50px) translateY(-100px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(100px) translateY(50px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-50px) translateY(100px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(-100px) translateY(-50px) rotate(360deg);
+  }
+}
+
+@keyframes cosmicParticles {
+  0% {
+    opacity: 0.3;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1) rotate(180deg);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9) rotate(360deg);
+  }
+}
+
+/* =====================
+   REALISTIC SPACE STAR FIELD - ENHANCED
+====================== */
+.stars-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  background: transparent;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.stars-bg::before,
+.stars-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    /* Bright prominent stars with multiple colors */ radial-gradient(
+      2px 2px at 20px 30px,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    ),
+    radial-gradient(
+      1.5px 1.5px at 40px 70px,
+      rgba(127, 255, 166, 0.8),
+      transparent
+    ),
+    radial-gradient(1px 1px at 90px 40px, rgba(173, 216, 230, 0.7), transparent),
+    radial-gradient(
+      1px 1px at 130px 80px,
+      rgba(255, 255, 255, 0.85),
+      transparent
+    ),
+    radial-gradient(
+      2px 2px at 160px 30px,
+      rgba(135, 206, 250, 0.6),
+      transparent
+    ),
+    /* Medium stars scattered naturally */
+      radial-gradient(
+        1px 1px at 200px 50px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+    radial-gradient(
+      1px 1px at 230px 90px,
+      rgba(127, 255, 166, 0.5),
+      transparent
+    ),
+    radial-gradient(
+      1px 1px at 270px 20px,
+      rgba(173, 216, 230, 0.7),
+      transparent
+    ),
+    radial-gradient(
+      1px 1px at 300px 60px,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    ),
+    radial-gradient(
+      1.5px 1.5px at 330px 100px,
+      rgba(135, 206, 250, 0.6),
+      transparent
+    ),
+    /* Smaller distant stars */
+      radial-gradient(
+        0.5px 0.5px at 50px 45px,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      ),
+    radial-gradient(
+      0.5px 0.5px at 110px 25px,
+      rgba(127, 255, 166, 0.3),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 180px 85px,
+      rgba(173, 216, 230, 0.4),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 250px 45px,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 320px 25px,
+      rgba(135, 206, 250, 0.3),
+      transparent
+    );
+  background-repeat: repeat;
+  background-size: 400px 180px;
+  animation: realisticStarField 120s linear infinite,
+    cosmicTwinkle 5s ease-in-out infinite alternate;
+}
+
+.stars-bg::after {
+  background-image: 
+    /* Additional layer of smaller twinkling stars */ radial-gradient(
+      0.5px 0.5px at 35px 65px,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 75px 25px,
+      rgba(127, 255, 166, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 115px 85px,
+      rgba(173, 216, 230, 0.3),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 155px 45px,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 195px 15px,
+      rgba(135, 206, 250, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 235px 75px,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 275px 35px,
+      rgba(127, 255, 166, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      0.5px 0.5px at 315px 95px,
+      rgba(173, 216, 230, 0.3),
+      transparent
+    );
+  background-repeat: repeat;
+  background-size: 360px 120px;
+  animation: realisticStarField 160s linear infinite reverse,
+    cosmicTwinkle 7s ease-in-out infinite alternate;
+}
+
+@keyframes realisticStarField {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(-50px) translateY(-25px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px) translateY(-50px);
+    opacity: 0.9;
+  }
+}
+
+@keyframes cosmicTwinkle {
+  0% {
+    opacity: 0.6;
+    filter: brightness(1) contrast(1);
+  }
+  25% {
+    opacity: 0.9;
+    filter: brightness(1.2) contrast(1.1);
+  }
+  75% {
+    opacity: 0.8;
+    filter: brightness(1.1) contrast(1);
+  }
+  100% {
+    opacity: 0.7;
+    filter: brightness(0.9) contrast(0.9);
+  }
+}
+
+/* Enhanced Star System */
+.star {
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.3) 60%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: sparklingTwinkle 3s ease-in-out infinite alternate,
+    professionalMovement 30s linear infinite;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 255, 255, 0.2), 0 0 18px rgba(255, 255, 255, 0.1);
+  filter: brightness(1.2);
+}
+
+#star1 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 10%;
+  left: -5%;
+  animation: sparklingTwinkle 4s ease-in-out infinite alternate,
+    diagonalTopLeftToBottomRight 35s linear infinite;
+  animation-delay: 0s, 0s;
+}
+#star2 {
+  width: 3px;
+  height: 3px;
+  top: 25%;
+  left: 105%;
+  animation: sparklingTwinkle 3.5s ease-in-out infinite alternate,
+    diagonalTopRightToBottomLeft 40s linear infinite;
+  animation-delay: 1s, 2s;
+}
+#star3 {
+  width: 2px;
+  height: 2px;
+  top: -5%;
+  left: 30%;
+  animation: sparklingTwinkle 5s ease-in-out infinite alternate,
+    verticalTopToBottom 45s linear infinite;
+  animation-delay: 2s, 4s;
+}
+#star4 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 110%;
+  left: 60%;
+  animation: sparklingTwinkle 4.2s ease-in-out infinite alternate,
+    verticalBottomToTop 42s linear infinite;
+  animation-delay: 0.5s, 1s;
+}
+#star5 {
+  width: 2px;
+  height: 2px;
+  top: 45%;
+  left: -5%;
+  animation: sparklingTwinkle 4.8s ease-in-out infinite alternate,
+    horizontalLeftToRight 38s linear infinite;
+  animation-delay: 1.5s, 6s;
+}
+#star6 {
+  width: 3px;
+  height: 3px;
+  top: 65%;
+  left: 105%;
+  animation: sparklingTwinkle 3.8s ease-in-out infinite alternate,
+    horizontalRightToLeft 43s linear infinite;
+  animation-delay: 0.8s, 8s;
+}
+#star7 {
+  width: 2.5px;
+  height: 2.5px;
+  top: -5%;
+  left: 80%;
+  animation: sparklingTwinkle 4.5s ease-in-out infinite alternate,
+    diagonalTopRightToBottomLeft 36s linear infinite;
+  animation-delay: 2.2s, 3s;
+}
+#star8 {
+  width: 2px;
+  height: 2px;
+  top: 110%;
+  left: 20%;
+  animation: sparklingTwinkle 5.2s ease-in-out infinite alternate,
+    diagonalBottomLeftToTopRight 41s linear infinite;
+  animation-delay: 1.8s, 5s;
+}
+#star9 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 85%;
+  left: -5%;
+  animation: sparklingTwinkle 3.9s ease-in-out infinite alternate,
+    diagonalBottomLeftToTopRight 39s linear infinite;
+  animation-delay: 0.3s, 7s;
+}
+#star10 {
+  width: 2px;
+  height: 2px;
+  top: 15%;
+  left: 105%;
+  animation: sparklingTwinkle 4.7s ease-in-out infinite alternate,
+    diagonalTopLeftToBottomRight 37s linear infinite;
+  animation-delay: 2.5s, 4.5s;
+}
+
+@keyframes sparklingTwinkle {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.7) rotate(0deg);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.4),
+      0 0 12px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1),
+      2px 0px 0px rgba(255, 255, 255, 0.8),
+      -2px 0px 0px rgba(255, 255, 255, 0.8),
+      0px 2px 0px rgba(255, 255, 255, 0.8),
+      0px -2px 0px rgba(255, 255, 255, 0.8);
+    filter: brightness(1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+  }
+  20% {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(72deg);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+      0 0 20px rgba(255, 255, 255, 0.5), 0 0 35px rgba(255, 255, 255, 0.3),
+      3px 0px 0px rgba(255, 255, 255, 0.9),
+      -3px 0px 0px rgba(255, 255, 255, 0.9),
+      0px 3px 0px rgba(255, 255, 255, 0.9),
+      0px -3px 0px rgba(255, 255, 255, 0.9);
+    filter: brightness(1.4) drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+  }
+  35% {
+    opacity: 0.95;
+    transform: scale(1.4) rotate(126deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+      0 0 30px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.4),
+      4px 0px 0px rgba(255, 255, 255, 1), -4px 0px 0px rgba(255, 255, 255, 1),
+      0px 4px 0px rgba(255, 255, 255, 1), 0px -4px 0px rgba(255, 255, 255, 1);
+    filter: brightness(1.7) drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.6) rotate(180deg);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.8), 0 0 65px rgba(255, 255, 255, 0.5),
+      5px 0px 0px rgba(255, 255, 255, 1), -5px 0px 0px rgba(255, 255, 255, 1),
+      0px 5px 0px rgba(255, 255, 255, 1), 0px -5px 0px rgba(255, 255, 255, 1);
+    filter: brightness(2) drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
+  }
+  65% {
+    opacity: 0.9;
+    transform: scale(1.3) rotate(234deg);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.8),
+      0 0 32px rgba(255, 255, 255, 0.6), 0 0 55px rgba(255, 255, 255, 0.35),
+      4px 0px 0px rgba(255, 255, 255, 0.95),
+      -4px 0px 0px rgba(255, 255, 255, 0.95),
+      0px 4px 0px rgba(255, 255, 255, 0.95),
+      0px -4px 0px rgba(255, 255, 255, 0.95);
+    filter: brightness(1.6) drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  }
+  80% {
+    opacity: 0.7;
+    transform: scale(1) rotate(288deg);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6),
+      0 0 24px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2),
+      3px 0px 0px rgba(255, 255, 255, 0.85),
+      -3px 0px 0px rgba(255, 255, 255, 0.85),
+      0px 3px 0px rgba(255, 255, 255, 0.85),
+      0px -3px 0px rgba(255, 255, 255, 0.85);
+    filter: brightness(1.3) drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.8) rotate(360deg);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5),
+      0 0 16px rgba(255, 255, 255, 0.3), 0 0 28px rgba(255, 255, 255, 0.15),
+      2px 0px 0px rgba(255, 255, 255, 0.7),
+      -2px 0px 0px rgba(255, 255, 255, 0.7),
+      0px 2px 0px rgba(255, 255, 255, 0.7),
+      0px -2px 0px rgba(255, 255, 255, 0.7);
+    filter: brightness(1.1) drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+  }
+}
+
+/* Multi-directional Movement Animations */
+@keyframes diagonalTopLeftToBottomRight {
+  0% {
+    transform: translateX(-100px) translateY(-100px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes diagonalTopRightToBottomLeft {
+  0% {
+    transform: translateX(100px) translateY(-100px);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 100px)) translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes diagonalBottomLeftToTopRight {
+  0% {
+    transform: translateX(-100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(-100vh - 100px));
+  }
+}
+
+@keyframes diagonalBottomRightToTopLeft {
+  0% {
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 100px)) translateY(calc(-100vh - 100px));
+  }
+}
+
+@keyframes horizontalLeftToRight {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px));
+  }
+}
+
+@keyframes horizontalRightToLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 100px));
+  }
+}
+
+@keyframes verticalTopToBottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes verticalBottomToTop {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(calc(-100vh - 100px));
+  }
+}
+
+@keyframes professionalMovement {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(20px) translateY(-15px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-30px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-25px) translateY(-10px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(360deg);
+  }
+}
+
+/* ====== Floating Plant Decorations ====== */
+.animated-plant {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  z-index: 1;
+  animation: plantSway 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.animated-plant:hover {
+  transform: scale(1.3) rotate(10deg);
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.6));
+}
+
+.plant-left {
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.plant-right {
+  right: 5%;
+  animation-delay: 2s;
+  animation-direction: reverse;
+}
+
+@keyframes plantSway {
+  0%,
+  100% {
+    transform: rotate(-8deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-4deg) translateY(-10px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-5px);
+  }
+  75% {
+    transform: rotate(4deg) translateY(-12px);
+  }
+}
+
+/* =====================
+   ENHANCED HERO INTRODUCTION
+====================== */
+
+.hero-introduction {
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 10;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.03) 0%,
+    transparent 50%,
+    rgba(46, 204, 64, 0.02) 100%
+  );
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  margin: 2rem auto;
+  max-width: 900px;
+  border: 1px solid rgba(127, 255, 166, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2),
+    0 0 100px rgba(127, 255, 166, 0.05);
+}
+
+/* Animated Welcome Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(127, 255, 166, 0.15) 0%,
+    rgba(46, 204, 64, 0.1) 100%
+  );
+  color: #7fffa6;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(127, 255, 166, 0.3);
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 25px rgba(127, 255, 166, 0.2);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUpFade 1s ease-out 0.5s forwards;
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+  animation: badgeSpin 3s ease-in-out infinite;
+}
+
+@keyframes badgeSpin {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+}
+
+.badge-text {
+  letter-spacing: 0.5px;
+}
+
+/* Dynamic Title Animation */
+.dynamic-title {
+  margin-bottom: 1.5rem;
+}
+
+.title-line-1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #7fffa6 25%,
+    #2ecc40 50%,
+    #7fffa6 75%,
+    #ffffff 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(127, 255, 166, 0.3);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUpFade 1s ease-out 0.8s forwards,
+    titleGradientFlow 4s ease-in-out infinite 1.8s;
+}
+
+.title-line-2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUpFade 1s ease-out 1.1s forwards;
+}
+
+.typing-text {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: gentleGlow 3s ease-in-out infinite alternate;
+}
+
+.title-cursor {
+  color: #7fffa6;
+  animation: softBlink 2s ease-in-out infinite;
+  margin-left: 0.2rem;
+}
+
+@keyframes gentleGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(127, 255, 166, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(127, 255, 166, 0.6);
+  }
+}
+
+@keyframes softBlink {
+  0%,
+  70% {
+    opacity: 1;
+  }
+  71%,
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes titleGradientFlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced Tagline Section */
+.hero-tagline {
+  max-width: 600px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUpFade 1s ease-out 1.4s forwards;
+}
+
+.tagline-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.deco-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7fffa6, transparent);
+  border-radius: 1px;
+  animation: lineGlow 3s ease-in-out infinite alternate;
+}
+
+.deco-line.left,
+.deco-line.right {
+  width: 60px;
+}
+
+.tagline-icon {
+  font-size: 1.5rem;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes lineGlow {
+  0% {
+    opacity: 0.5;
+    box-shadow: 0 0 5px rgba(127, 255, 166, 0.3);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(127, 255, 166, 0.6);
+  }
+}
+
+@keyframes iconFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(10deg);
+  }
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.highlight-text {
+  background: linear-gradient(135deg, #7fffa6 0%, #2ecc40 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  position: relative;
+}
+
+.highlight-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7fffa6, #2ecc40);
+  border-radius: 1px;
+  opacity: 0.6;
+}
+
+/* Floating Tech Elements */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.float-item {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  animation: floatAround 8s ease-in-out infinite;
+}
+
+.float-item.code {
+  top: 20%;
+  left: 10%;
+  color: #7fffa6;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+.float-item.react {
+  top: 30%;
+  right: 15%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.float-item.node {
+  bottom: 30%;
+  left: 15%;
+  color: #68a063;
+  animation-delay: 4s;
+  animation-duration: 9s;
+}
+
+.float-item.eco {
+  bottom: 20%;
+  right: 10%;
+  color: #7fffa6;
+  animation-delay: 6s;
+  animation-duration: 11s;
+}
+
+@keyframes floatAround {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translateX(20px) translateY(-15px) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(-10px) translateY(-30px) rotate(180deg);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateX(-25px) translateY(-10px) rotate(270deg);
+    opacity: 0.9;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-introduction {
+    padding: 3rem 1.5rem;
+    min-height: 50vh;
+    margin: 1rem;
+  }
+
+  .title-line-1 {
+    font-size: 2.5rem;
+  }
+
+  .title-line-2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .floating-elements {
+    display: none;
+  }
+
+  .animated-plant {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-introduction {
+    padding: 2rem 1rem;
+    min-height: 40vh;
+  }
+
+  .title-line-1 {
+    font-size: 2rem;
+  }
+
+  .title-line-2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .animated-plant {
+    font-size: 2.5rem;
+  }
+}

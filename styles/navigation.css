@@ -1,0 +1,393 @@
+/* =====================
+   Navigation Bar Stylesheet
+   Author: Kamwanga Raheem
+   Responsive navbar with hamburger menu
+====================== */
+
+/* =====================
+   COMPACT TOP-RIGHT NAVBAR - SMALL & ELEGANT
+====================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(
+    135deg,
+    rgba(5, 10, 15, 0.92) 0%,
+    rgba(10, 20, 30, 0.88) 50%,
+    rgba(15, 25, 35, 0.92) 100%
+  );
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(46, 204, 64, 0.2);
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 3rem;
+  transition: all 0.3s ease;
+  min-height: 100px;
+}
+
+.navbar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(46, 204, 64, 0.3);
+}
+
+/* Compact logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2ecc40;
+  box-shadow: 0 0 15px rgba(46, 204, 64, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-profile-img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.navbar-name {
+  color: #2ecc40;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+/* COMPACT NAVIGATION LINKS */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #2ecc40;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #2ecc40;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-list a:hover {
+  color: #27ae60;
+  background: rgba(46, 204, 64, 0.1);
+  transform: translateY(-1px);
+}
+
+.nav-list a:hover::after {
+  width: 80%;
+}
+
+/* =====================
+   HAMBURGER MENU - MOBILE NAVIGATION
+====================== */
+
+/* Hide hamburger button on desktop */
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: #2ecc40;
+  border-radius: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+/* Hide mobile menu header on desktop */
+.mobile-menu-header {
+  display: none;
+}
+
+/* Mobile responsive with hamburger menu */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0;
+  }
+
+  .navbar-logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Show hamburger button on mobile */
+  .hamburger-button {
+    display: flex;
+  }
+
+  /* Hide nav-list by default on mobile */
+  .nav-list {
+    position: fixed;
+    top: 100px;
+    right: -320px;
+    width: 300px;
+    height: auto;
+    max-height: calc(100vh - 100px);
+    background: linear-gradient(
+      135deg,
+      rgba(5, 10, 15, 0.98) 0%,
+      rgba(10, 20, 30, 0.95) 50%,
+      rgba(15, 25, 35, 0.98) 100%
+    );
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(46, 204, 64, 0.2);
+    border-radius: 0 0 0 15px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 1rem 0;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+  }
+
+  /* Mobile menu items styling */
+  .mobile-menu-header {
+    display: block !important;
+    width: 100%;
+    border-bottom: 2px solid rgba(46, 204, 64, 0.3);
+    background: rgba(46, 204, 64, 0.05);
+  }
+
+  .mobile-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    color: #2ecc40;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .close-icon {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .close-text {
+    font-size: 1rem;
+  }
+
+  .mobile-close-btn:hover {
+    background: rgba(46, 204, 64, 0.1);
+    color: #27ae60;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(46, 204, 64, 0.1);
+  }
+
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2ecc40;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(46, 204, 64, 0.1),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .nav-list a:hover::before {
+    left: 100%;
+  }
+
+  .nav-list a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #2ecc40;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .nav-list a:hover {
+    color: #27ae60;
+    background: rgba(46, 204, 64, 0.05);
+    transform: translateX(5px);
+  }
+
+  .nav-list a:hover::after {
+    width: 80%;
+  }
+
+  /* Hamburger menu toggle animation */
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+    background: #27ae60;
+  }
+
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .hamburger-checkbox:checked + .hamburger-button .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+    background: #27ae60;
+  }
+
+  /* Show menu when hamburger is checked */
+  .hamburger-checkbox:checked ~ .nav-list {
+    right: 0;
+  }
+
+  /* Add subtle bounce animation when menu opens */
+  .hamburger-checkbox:checked ~ .nav-list li {
+    animation: menuItemSlideIn 0.5s ease-out forwards;
+  }
+
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(5) {
+    animation-delay: 0.3s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(6) {
+    animation-delay: 0.35s;
+  }
+  .hamburger-checkbox:checked ~ .nav-list li:nth-child(7) {
+    animation-delay: 0.4s;
+  }
+}
+
+/* Menu item slide-in animation */
+@keyframes menuItemSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .nav-list {
+    width: calc(100vw - 2rem);
+    max-width: 280px;
+    right: -300px;
+  }
+
+  .nav-list a {
+    padding: 1.2rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar-profile-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-name {
+    font-size: 1.1rem;
+  }
+
+  .hamburger-button {
+    width: 28px;
+    height: 22px;
+  }
+
+  .hamburger-line {
+    height: 2.5px;
+  }
+}

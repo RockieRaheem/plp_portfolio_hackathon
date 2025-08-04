@@ -1,0 +1,221 @@
+/* =====================
+   Eco-Space Portfolio Main Stylesheet
+   Author: Kamwanga Raheem
+   Global styles, resets, and shared components
+====================== */
+
+/* ====== Global Styles & Resets ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding-top: 100px;
+  background: 
+    /* Soft stellar atmosphere with neutral tones */ radial-gradient(
+      ellipse at 10% 20%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 90% 80%,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(16, 24, 32, 0.8) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 20% 70%,
+      rgba(255, 255, 255, 0.04) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 80% 30%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 35%
+    ),
+    /* Enhanced stellar base gradient with neutral tones */
+      linear-gradient(
+        140deg,
+        #0a1420 0%,
+        #0e1922 15%,
+        #121f26 30%,
+        #16242a 45%,
+        #1a2a2e 60%,
+        #1e3032 75%,
+        #223336 90%,
+        #0c1a22 100%
+      );
+  color: #e0f2e9;
+  min-height: 100vh;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Global Stellar Atmosphere Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    /* Floating soft white stellar particles */ radial-gradient(
+      1px 1px at 10% 20%,
+      rgba(255, 255, 255, 0.15),
+      transparent
+    ),
+    radial-gradient(1px 1px at 25% 45%, rgba(255, 255, 255, 0.12), transparent),
+    radial-gradient(1px 1px at 40% 15%, rgba(255, 255, 255, 0.18), transparent),
+    radial-gradient(1px 1px at 55% 65%, rgba(255, 255, 255, 0.14), transparent),
+    radial-gradient(1px 1px at 70% 35%, rgba(255, 255, 255, 0.16), transparent),
+    radial-gradient(1px 1px at 85% 80%, rgba(255, 255, 255, 0.13), transparent),
+    radial-gradient(1px 1px at 15% 75%, rgba(255, 255, 255, 0.17), transparent),
+    radial-gradient(1px 1px at 90% 25%, rgba(255, 255, 255, 0.12), transparent);
+  background-size: 800px 600px, 900px 700px, 750px 550px, 850px 650px,
+    700px 500px, 950px 750px, 650px 450px, 1000px 800px;
+  background-repeat: repeat;
+  animation: gentleGlobalDrift 500s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+@keyframes gentleGlobalDrift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-80px) translateY(-150px);
+  }
+}
+
+/* Enhanced Professional Background Effects */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      ellipse at 30% 40%,
+      rgba(255, 255, 255, 0.02) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 70% 60%,
+      rgba(255, 255, 255, 0.015) 0%,
+      transparent 50%
+    );
+  animation: softAtmosphereShift 35s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+@keyframes softAtmosphereShift {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* ====== Enhanced Section Transitions ====== */
+section {
+  position: relative;
+  z-index: 2;
+  background: rgba(8, 14, 20, 0.15);
+  backdrop-filter: blur(1px);
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.01) 0%,
+    transparent 20%,
+    transparent 80%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Professional Scroll Indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #e0e0e0);
+  z-index: 1000;
+  transition: width 0.1s ease;
+}
+
+/* Enhanced Container Styling */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Professional Content Sections */
+.content-section {
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(8, 14, 20, 0.3);
+}
+
+/* ====== Shared Section Styling ====== */
+.section-title {
+  color: #7fffa6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(127, 255, 166, 0.3);
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+/* ====== Advanced Background Effects ====== */
+@keyframes nebulaDrift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-200px) translateY(-100px);
+  }
+}
