@@ -19,7 +19,7 @@
 
 ---
 
-### 🏆 **Award-Winning Portfolio** | **🌱 Sustainable Tech Advocate** | **⚡ Full-Stack Developer**
+### 🏆 **Raheem's Portfolio** | **🌱 Sustainable Tech Advocate** | **⚡ Full-Stack Developer**
 
 _Professional portfolio showcasing innovative web development with eco-conscious design principles_
 
@@ -45,17 +45,10 @@ _Professional portfolio showcasing innovative web development with eco-conscious
 
 - **🌐 Main Site:** [https://plp-portfolio-hackathon-sooty.vercel.app/](https://plp-portfolio-hackathon-sooty.vercel.app/)
 - **📱 Mobile Optimized:** Seamless experience across all devices (320px to 4K)
-- **⚡ Lightning Fast:** 95+ PageSpeed score with optimized performance
-- **🔒 Secure:** HTTPS enabled with enterprise-grade security
-- **🌍 Global CDN:** Edge-optimized delivery worldwide
 
 ### 🛠️ **Deployment Excellence**
 
 - ✅ **Vercel Platform:** Professional hosting with automatic deployments
-- ✅ **Zero Downtime:** Instant deployments on every GitHub push
-- ✅ **Edge Network:** Global performance optimization
-- ✅ **Analytics Ready:** Built-in performance monitoring
-- ✅ **SEO Optimized:** Meta tags, structured data, perfect lighthouse scores
 
 ## ✨ Key Features & Technical Excellence
 
@@ -118,25 +111,8 @@ minimal bundle size
 ```bash
 📊 Git Version Control    → Professional workflow
 🚀 Vercel Deployment     → Edge-optimized hosting
-🔍 SEO Optimization      → Meta tags, structured data
-📈 Performance Metrics   → Lighthouse, PageSpeed
 🌱 Sustainability Focus  → Green web practices
 ```
-
-## 📊 Performance Metrics
-
-<div align="center">
-
-| Metric                 | Score | Status          |
-| ---------------------- | ----- | --------------- |
-| 🚀 **Performance**     | 95+   | ✅ Excellent    |
-| ♿ **Accessibility**   | 100   | ✅ Perfect      |
-| 🎯 **Best Practices**  | 100   | ✅ Perfect      |
-| 🔍 **SEO**             | 95+   | ✅ Excellent    |
-| 📱 **Mobile Friendly** | 100%  | ✅ Perfect      |
-| 🌱 **Sustainability**  | A+    | ✅ Eco-Friendly |
-
-</div>
 
 ## 🚀 Featured Projects Showcase
 
@@ -235,14 +211,14 @@ cd plp_portfolio_hackathon
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-00D4AA?style=for-the-badge)](https://plp-portfolio-hackathon-sooty.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-RockieRaheem-181717?style=for-the-badge&logo=github)](https://github.com/RockieRaheem)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/kamwanga-raheem-b1b055271)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:raheem@example.com)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:kamwangaraheem2050@gmail.com)
 
 </div>
 
 ### 📧 **Professional Contact**
 
 - **📱 WhatsApp:** [+256704057370](https://wa.me/+256704057370)
-- **📧 Email:** Professional inquiries welcome
+- **📧 Email:** [kamwangaraheem2050@gmail.com]
 - **💼 LinkedIn:** [kamwanga-raheem-b1b055271](https://linkedin.com/in/kamwanga-raheem-b1b055271)
 - **🐦 Twitter:** [@kamwanga_rahiim](https://twitter.com/kamwanga_rahiim)
 
