@@ -35,9 +35,7 @@ _Professional portfolio showcasing innovative web development with eco-conscious
 
 - 🎓 **Education:** Uganda Technology and Management University (UTAMU)
 - 🌍 **Location:** Kampala, Uganda | **Age:** 24
-- 🚀 **Expertise:** Full-stack development, React, Next.js, Node.js, Python
 - 🌱 **Mission:** Creating eco-conscious technology solutions that impact communities
-- 🏆 **Experience:** 4+ years, 15+ projects, Multiple industry certifications
 
 ## 🚀 Live Demo & Deployment
 
@@ -63,8 +61,8 @@ _Professional portfolio showcasing innovative web development with eco-conscious
 
 - **📐 Mobile-First Design:** Progressive enhancement from 320px to 8K displays
 - **🎯 Breakpoint Strategy:** Fluid layouts with strategic breakpoints
-- **⚡ Performance Optimized:** Hardware-accelerated animations
-- **♿ Accessibility Champion:** WCAG 2.1 AA compliant with screen reader support
+
+2.1 AA compliant with screen reader support
 
 ### 🧩 **Modular CSS Architecture**
 
@@ -102,8 +100,6 @@ styles/
 ```html
 🌐 HTML5 → Semantic markup, accessibility-first 🎨 CSS3 → Modern layouts,
 animations, gradients 📱 Responsive → Mobile-first, progressive enhancement ♿
-A11Y → WCAG 2.1 compliance, screen readers ⚡ Performance → Optimized loading,
-minimal bundle size
 ```
 
 ### **Development Tools**
@@ -166,9 +162,6 @@ minimal bundle size
 
 - **🗃️ SQL Mastery:** Introduction to SQL, Intermediate SQL, Joining Data
 - **📊 Data Analysis:** Introduction to Excel for data manipulation
-- **🌱 Sustainable Development:** Eco-conscious development practices
-- **👥 Community Impact:** Mentoring junior developers
-- **🚀 Innovation Leadership:** Leading tech initiatives in sustainability
 
 ## 🌱 Sustainability Focus
 
