@@ -15,11 +15,10 @@
 [![Responsive](https://img.shields.io/badge/📱_Responsive-100%25-success?style=flat-square)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 [![Accessibility](https://img.shields.io/badge/♿_A11Y-WCAG_2.1-blue?style=flat-square)](https://www.w3.org/WAI/WCAG21/quickref/)
 [![Performance](https://img.shields.io/badge/⚡_Performance-95%2B-orange?style=flat-square)](https://developers.google.com/speed/pagespeed/insights/)
-[![Green Tech](https://img.shields.io/badge/🌱_Sustainable-Eco_Focus-50c878?style=flat-square)](https://sustainablewebdesign.org/)
 
 ---
 
-### 🏆 **Award-Winning Portfolio** | **🌱 Sustainable Tech Advocate** | **⚡ Full-Stack Developer**
+### 🏆 **Raheem's Eco-Space Portfolio** | **🌱 Sustainable Tech Advocate** | **⚡ Full-Stack Developer**
 
 _Professional portfolio showcasing innovative web development with eco-conscious design principles_
 
@@ -35,9 +34,44 @@ _Professional portfolio showcasing innovative web development with eco-conscious
 
 - 🎓 **Education:** Uganda Technology and Management University (UTAMU)
 - 🌍 **Location:** Kampala, Uganda | **Age:** 24
-- 🚀 **Expertise:** Full-stack development, React, Next.js, Node.js, Python
+- 🚀 **Expertise:** Full-stack development (React, Next.js, Node.js, Python)
 - 🌱 **Mission:** Creating eco-conscious technology solutions that impact communities
-- 🏆 **Experience:** 4+ years, 15+ projects, Multiple industry certifications
+- 🏆 **Experience:** 4+ years, 15+ projects, Multiple certifications
+
+## 📁 Project Structure
+
+```
+plp_portfolio_hackathon/
+├── 📄 index.html                    # Main portfolio page (1270 lines)
+├── 📖 README.md                     # Project documentation
+├── 📁 styles/                       # Modular CSS architecture (12 files)
+│   ├── 🎨 main.css                  # Core styling foundation
+│   ├── 🌐 global.css                # Global variables & utilities
+│   ├── 🧭 navigation.css            # Responsive navigation system
+│   ├── 🏠 heroSection.css           # Dynamic hero landing
+│   ├── 👤 aboutMe.css               # About section with hover effects
+│   ├── 🎓 education.css             # Interactive education timeline
+│   ├── ⚡ skills.css                # Technical expertise showcase
+│   ├── 🚀 projects.css              # Featured projects grid
+│   ├── 💚 interests.css             # Tech interests & passions
+│   ├── 🏆 certificates.css          # Achievement cards
+│   ├── 📧 contact.css               # Contact form & info hub
+│   └── 🦶 footer.css                # Footer styling
+├── 📁 Images/                       # Optimized project assets
+│   ├── 🖼️ myPlp_portfolio_website.png # Portfolio banner
+│   ├── 👤 profileImage.jpg          # Professional profile photo
+│   ├── 🎓 scholarHunt.png           # ScholarHunt project screenshot
+│   ├── 🏥 elithpharmacy.png         # Elith Pharmacy system image
+│   ├── 👟 afroshop.png              # Afro Shop Uganda screenshot
+│   └── ♻️ wasteMgtSystem.png        # Waste Management system
+└── 📁 certificates/                 # Professional certifications (6 files)
+    ├── 🗃️ introductionToSQL.png      # SQL Fundamentals certification
+    ├── 🗃️ IntermediateSQL.png        # Advanced SQL techniques
+    ├── 📊 Joining Data In SQL.pdf    # SQL Joins mastery
+    ├── 📈 Introduction to excel.pdf  # Excel for data analysis
+    ├── 📊 excelDataPreparation.pdf   # Excel data preparation skills
+    └── 📄 myCV.pdf                   # Professional resume/CV
+```
 
 ## 🚀 Live Demo & Deployment
 
@@ -45,154 +79,123 @@ _Professional portfolio showcasing innovative web development with eco-conscious
 
 - **🌐 Main Site:** [https://plp-portfolio-hackathon-sooty.vercel.app/](https://plp-portfolio-hackathon-sooty.vercel.app/)
 - **📱 Mobile Optimized:** Seamless experience across all devices (320px to 4K)
-- **⚡ Lightning Fast:** 95+ PageSpeed score with optimized performance
+- **⚡ Lightning Fast:** Optimized performance with 95+ PageSpeed score
 - **🔒 Secure:** HTTPS enabled with enterprise-grade security
-- **🌍 Global CDN:** Edge-optimized delivery worldwide
 
-### 🛠️ **Deployment Excellence**
+### 🛠️ **Deployment Features**
 
 - ✅ **Vercel Platform:** Professional hosting with automatic deployments
 - ✅ **Zero Downtime:** Instant deployments on every GitHub push
 - ✅ **Edge Network:** Global performance optimization
-- ✅ **Analytics Ready:** Built-in performance monitoring
-- ✅ **SEO Optimized:** Meta tags, structured data, perfect lighthouse scores
+- ✅ **SEO Optimized:** Meta tags and structured data
 
-## ✨ Key Features & Technical Excellence
+## ✨ Portfolio Sections
 
-### 🎨 **Advanced Visual Design**
+### 🏠 **Hero Section**
 
-- **🌌 Eco-Space Theme:** Animated cosmic backgrounds with sustainable aesthetics
-- **🎭 Micro-Interactions:** Smooth hover effects and scroll-triggered animations
-- **🌈 Color Psychology:** Professional green gradients promoting sustainability
-- **📖 Typography Excellence:** Optimized readability with perfect contrast ratios
+- Dynamic introduction with animated elements
+- Professional branding with "Raheem's Eco-Space"
+- Responsive navigation with hamburger menu
 
-### 📱 **Responsive Architecture**
+### 👤 **About Me**
 
-- **📐 Mobile-First Design:** Progressive enhancement from 320px to 8K displays
-- **🎯 Breakpoint Strategy:** Fluid layouts with strategic breakpoints
-- **⚡ Performance Optimized:** Hardware-accelerated animations
-- **♿ Accessibility Champion:** WCAG 2.1 AA compliant with screen reader support
+- Personal story and professional journey
+- Interactive hover effects with glowing borders
+- Mission-focused content highlighting sustainability
 
-### 🧩 **Modular CSS Architecture**
+### 🎓 **Education**
 
-```
-styles/
-├── 🎨 main.css          # Core styling foundation
-├── 🌐 global.css        # Global variables & utilities
-├── 🧭 navigation.css    # Navigation system
-├── 🏠 heroSection.css   # Landing section
-├── 👤 aboutMe.css       # About section with hover effects
-├── 🎓 education.css     # Education timeline
-├── ⚡ skills.css        # Technical skills showcase
-├── 🚀 projects.css      # Featured projects grid
-├── 💚 interests.css     # Professional interests
-├── 🏆 certificates.css  # Achievement cards
-├── 📧 contact.css       # Contact form & info
-└── 🦶 footer.css        # Footer styling
-```
+- Interactive timeline showcasing academic background
+- Uganda Technology and Management University (UTAMU)
+- Professional development milestones
 
-### 🎯 **Core Sections**
+### ⚡ **Technical Expertise**
 
-1. **🏠 Hero Landing:** Dynamic introduction with animated elements
-2. **👤 About Me:** Personal story with glowing hover effects
-3. **🎓 Education:** Interactive timeline with academic journey
-4. **⚡ Technical Skills:** Programming languages with proficiency indicators
-5. **🚀 Featured Projects:** Project showcase with live demos and GitHub links
-6. **💚 Professional Interests:** 6 key areas of technology passion
-7. **🏆 Achievements:** Professional certifications and learning milestones
-8. **📧 Contact Hub:** Functional form with multiple communication channels
+- **Frontend Development:** HTML5, CSS3, JavaScript, React
+- **Backend Development:** Node.js, Python, PHP
+- **Database & DevOps:** MySQL, MongoDB, Git, Docker
+
+### 🚀 **Featured Projects**
+
+#### 🎓 **ScholarHunt Platform**
+
+- AI-powered scholarship discovery platform
+- Helping students find educational opportunities
+- **Tech Stack:** React, Node.js, MongoDB, Machine Learning
+
+#### 🏥 **Elith Pharmacy System**
+
+- Healthcare management with real-time inventory
+- Inventory management, patient records, reporting
+- **Tech Stack:** Full-stack web application with database integration
+
+#### 👟 **Afro Shop Uganda**
+
+- E-commerce marketplace for African footwear
+- Product catalog, shopping cart, user authentication
+- **Tech Stack:** Modern web technologies with payment integration
+
+#### ♻️ **EcoSmart Waste Management**
+
+- Environmental solution using IoT and AI
+- Smart waste collection and environmental monitoring
+- **Tech Stack:** IoT sensors, data analytics, web dashboard
+
+### 💚 **Tech Interests & Passions**
+
+- **Modern Web Development:** React & Next.js, Web Performance, PWAs
+- **Sustainable Technology:** Green Computing, Efficient Algorithms
+- **AI & Machine Learning:** Python ML, Data Science, AI Ethics
+- **Full-Stack Innovation:** System Architecture, Database Design
+- **Open Source Collaboration:** GitHub Contributions, Community Building
+- **Emerging Technologies:** Blockchain, IoT Solutions, Edge Computing
+
+### 🏆 **Achievements Section**
+
+- **🗃️ SQL Mastery Suite:** Introduction to SQL, Intermediate SQL, Joining Data in SQL
+- **📊 Data Analysis Excellence:** Introduction to Excel, Excel Data Preparation
+- **📄 Professional Documentation:** Complete CV and portfolio materials
+- **🌱 Sustainable Development:** Eco-conscious development practices
+- **👥 Community Impact:** Mentoring and knowledge sharing
+
+### 📧 **Contact Hub**
+
+- Functional contact form with validation
+- Multiple communication channels
+- Professional social media links
+- Response time indicators
 
 ## 🛠️ Technology Stack
 
 ### **Frontend Excellence**
 
-```html
-🌐 HTML5 → Semantic markup, accessibility-first 🎨 CSS3 → Modern layouts,
-animations, gradients 📱 Responsive → Mobile-first, progressive enhancement ♿
-A11Y → WCAG 2.1 compliance, screen readers ⚡ Performance → Optimized loading,
-minimal bundle size
+```
+🌐 HTML5         → Semantic markup, accessibility-first
+🎨 CSS3          → Modern layouts, animations, gradients
+📱 Responsive    → Mobile-first, progressive enhancement
+♿ A11Y          → WCAG 2.1 compliance, screen reader support
+⚡ Performance   → Optimized loading, minimal bundle size
 ```
 
 ### **Development Tools**
 
-```bash
+```
 📊 Git Version Control    → Professional workflow
 🚀 Vercel Deployment     → Edge-optimized hosting
 🔍 SEO Optimization      → Meta tags, structured data
-📈 Performance Metrics   → Lighthouse, PageSpeed
+📈 Performance Metrics   → Lighthouse optimization
 🌱 Sustainability Focus  → Green web practices
 ```
 
 ## 📊 Performance Metrics
 
-<div align="center">
-
-| Metric                 | Score | Status          |
-| ---------------------- | ----- | --------------- |
-| 🚀 **Performance**     | 95+   | ✅ Excellent    |
-| ♿ **Accessibility**   | 100   | ✅ Perfect      |
-| 🎯 **Best Practices**  | 100   | ✅ Perfect      |
-| 🔍 **SEO**             | 95+   | ✅ Excellent    |
-| 📱 **Mobile Friendly** | 100%  | ✅ Perfect      |
-| 🌱 **Sustainability**  | A+    | ✅ Eco-Friendly |
-
-</div>
-
-## 🚀 Featured Projects Showcase
-
-### 🎓 **ScholarHunt Platform**
-
-- **Purpose:** AI-powered scholarship discovery platform
-- **Tech Stack:** React, Node.js, MongoDB, Machine Learning
-- **Impact:** Helping students find educational opportunities
-- **[Live Demo](https://plp-portfolio-hackathon-sooty.vercel.app/#projects)** | **[GitHub](https://github.com/RockieRaheem)**
-
-### 🏥 **Elith Pharmacy System**
-
-- **Purpose:** Healthcare management with real-time inventory
-- **Tech Stack:** Full-stack web application with database integration
-- **Features:** Inventory management, patient records, reporting
-- **[Live Demo](https://plp-portfolio-hackathon-sooty.vercel.app/#projects)** | **[GitHub](https://github.com/RockieRaheem)**
-
-### 👟 **Afro Shop Uganda**
-
-- **Purpose:** E-commerce marketplace for African footwear
-- **Tech Stack:** Modern web technologies with payment integration
-- **Features:** Product catalog, shopping cart, user authentication
-- **[Live Demo](https://plp-portfolio-hackathon-sooty.vercel.app/#projects)** | **[GitHub](https://github.com/RockieRaheem)**
-
-### ♻️ **EcoSmart Waste Management**
-
-- **Purpose:** Environmental solution using IoT and AI
-- **Tech Stack:** IoT sensors, data analytics, web dashboard
-- **Impact:** Smart waste collection and environmental monitoring
-- **[Live Demo](https://plp-portfolio-hackathon-sooty.vercel.app/#projects)** | **[GitHub](https://github.com/RockieRaheem)**
-
-## 💚 Professional Interests & Expertise
-
-<div align="center">
-
-| 🌐 **Web Development** | 🌱 **Sustainable Tech** | 🤖 **AI & ML** |
-| ---------------------- | ----------------------- | -------------- |
-| React & Next.js        | Green Computing         | Python ML      |
-| Web Performance        | Efficient Algorithms    | Data Science   |
-| Progressive Web Apps   | Eco-Innovation          | AI Ethics      |
-
-| ⚡ **Full-Stack**   | 🔓 **Open Source**   | 🚀 **Emerging Tech** |
-| ------------------- | -------------------- | -------------------- |
-| System Architecture | GitHub Contributions | Blockchain           |
-| Database Design     | Community Building   | IoT Solutions        |
-| API Development     | Knowledge Sharing    | Edge Computing       |
-
-</div>
-
-## 🏆 Achievements & Certifications
-
-- **🗃️ SQL Mastery:** Introduction to SQL, Intermediate SQL, Joining Data
-- **📊 Data Analysis:** Introduction to Excel for data manipulation
-- **🌱 Sustainable Development:** Eco-conscious development practices
-- **👥 Community Impact:** Mentoring junior developers
-- **🚀 Innovation Leadership:** Leading tech initiatives in sustainability
+| Metric                 | Score | Status       |
+| ---------------------- | ----- | ------------ |
+| 🚀 **Performance**     | 95+   | ✅ Excellent |
+| ♿ **Accessibility**   | 100   | ✅ Perfect   |
+| 🎯 **Best Practices**  | 100   | ✅ Perfect   |
+| 🔍 **SEO**             | 95+   | ✅ Excellent |
+| 📱 **Mobile Friendly** | 100%  | ✅ Perfect   |
 
 ## 🌱 Sustainability Focus
 
@@ -228,6 +231,14 @@ cd plp_portfolio_hackathon
 # Custom domain configuration available
 ```
 
+## 🏗️ Architecture Highlights
+
+- **📱 Responsive Design:** Mobile-first approach with fluid layouts
+- **🧩 Modular CSS:** 12 separate stylesheets for maintainability
+- **♿ Accessibility:** WCAG 2.1 compliant with semantic HTML
+- **⚡ Performance:** Optimized assets and efficient code structure
+- **🔧 Maintainable:** Clean separation of concerns and documented code
+
 ## 🔗 Connect & Collaborate
 
 <div align="center">
@@ -235,31 +246,16 @@ cd plp_portfolio_hackathon
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-00D4AA?style=for-the-badge)](https://plp-portfolio-hackathon-sooty.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-RockieRaheem-181717?style=for-the-badge&logo=github)](https://github.com/RockieRaheem)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/kamwanga-raheem-b1b055271)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:raheem@example.com)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:kamwangaraheem2050@gmail.com)
 
 </div>
 
 ### 📧 **Professional Contact**
 
 - **📱 WhatsApp:** [+256704057370](https://wa.me/+256704057370)
-- **📧 Email:** Professional inquiries welcome
+- **📧 Email:** [kamwangaraheem2050@gmail.com](mailto:kamwangaraheem2050@gmail.com)
 - **💼 LinkedIn:** [kamwanga-raheem-b1b055271](https://linkedin.com/in/kamwanga-raheem-b1b055271)
 - **🐦 Twitter:** [@kamwanga_rahiim](https://twitter.com/kamwanga_rahiim)
-
-## 📈 Project Statistics
-
-<div align="center">
-
-```
-📁 Project Structure: 12 CSS modules, 1 HTML file, semantic architecture
-⚡ Performance: 95+ PageSpeed score, <2s load time
-📱 Compatibility: 100% responsive, cross-browser tested
-♿ Accessibility: WCAG 2.1 AA compliant, screen reader optimized
-🌱 Sustainability: A+ green web rating, minimal carbon footprint
-🔧 Maintenance: Modular code, easy updates, scalable structure
-```
-
-</div>
 
 ## 🚀 Future Enhancements
 

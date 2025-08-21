@@ -158,9 +158,9 @@
                 <p>
                   I'm a dedicated
                   <strong>Software Engineering student</strong> at UTAMU,
-                  passionate about creating digital solutions. At 24, I've
-                  embarked on a journey where technology meets sustainability,
-                  believing every line of code contributes to a greener future.
+                  passionate about creating digital solutions. I've embarked on
+                  a journey where technology meets sustainability, believing
+                  every line of code contributes to a greener future.
                 </p>
 
                 <p>
@@ -212,21 +212,21 @@
         <h2 class="section-title">Education</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-year">2005 - 2014</div>
+            <div class="timeline-year">2006 - 2015</div>
             <div class="timeline-content">
               <strong>Primary School</strong>
               <p>Completed Primary Leaving Examinations (PLE)</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-year">2015 - 2018</div>
+            <div class="timeline-year">2015 - 2019</div>
             <div class="timeline-content">
               <strong>O-Level</strong>
               <p>Uganda Certificate of Education (UCE)</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-year">2019 - 2020</div>
+            <div class="timeline-year">2019 - 2021</div>
             <div class="timeline-content">
               <strong>A-Level</strong>
               <p>Uganda Advanced Certificate of Education (UACE)</p>
@@ -949,15 +949,15 @@
               <div class="form-header">
                 <h3 class="form-title">Send Me a Message</h3>
                 <p class="form-description">
-                  Tell me about your project, and I'll get back to you as soon
-                  as possible.
+                  Fill out the form below and click "Send Email" to open your
+                  email client with the message ready to send.
                 </p>
               </div>
               <form
                 class="contact-form"
-                method="POST"
-                action="#contact"
-                autocomplete="off"
+                method="post"
+                action="mailto:kamwangaraheem2050@gmail.com"
+                enctype="text/plain"
               >
                 <div class="form-row">
                   <div class="form-group">
@@ -965,7 +965,7 @@
                     <input
                       type="text"
                       id="name"
-                      name="name"
+                      name="Name: "
                       required
                       placeholder="John Doe"
                       class="form-input"
@@ -976,7 +976,7 @@
                     <input
                       type="email"
                       id="email"
-                      name="email"
+                      name="Email: "
                       required
                       placeholder="john@example.com"
                       class="form-input"
@@ -985,27 +985,20 @@
                 </div>
                 <div class="form-group">
                   <label for="subject" class="form-label">Subject</label>
-                  <select
+                  <input
+                    type="text"
                     id="subject"
-                    name="subject"
+                    name="Subject: "
                     required
-                    class="form-select"
-                  >
-                    <option value="">Choose a topic</option>
-                    <option value="project">New Project Inquiry</option>
-                    <option value="collaboration">
-                      Collaboration Opportunity
-                    </option>
-                    <option value="consultation">Technical Consultation</option>
-                    <option value="freelance">Freelance Work</option>
-                    <option value="other">Other</option>
-                  </select>
+                    placeholder="New Project Inquiry | Collaboration | Consultation | Other"
+                    class="form-input"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="message" class="form-label">Message</label>
                   <textarea
                     id="message"
-                    name="message"
+                    name="Message: "
                     rows="5"
                     required
                     placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
@@ -1014,8 +1007,8 @@
                 </div>
                 <div class="form-actions">
                   <button type="submit" class="contact-btn primary">
-                    <span class="btn-icon">🚀</span>
-                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon">�</span>
+                    <span class="btn-text">Send Email</span>
                   </button>
                   <button type="reset" class="contact-btn secondary">
                     <span class="btn-icon">🔄</span>
